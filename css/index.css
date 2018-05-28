@@ -148,9 +148,11 @@ header {
     color: #e13934;
     letter-spacing: 5px;
     margin-bottom: 26px;
+    font-weight: 600;
 }
 
-.telNumbers,.psd{
+.telNumbers,
+.psd {
     width: 330px;
     height: 44px;
     border: 1px solid #dcdbdb;
@@ -161,13 +163,15 @@ header {
     background: url(../images/telNum.png) no-repeat 16px center;
     margin-bottom: 29px;
 }
-.psd{
-    background: url(../images/psd.png) no-repeat 16px center;    
-}
-.telNumbers:focus,.psd:focus{
-    border: 1px solid #e13934;
+
+.psd {
+    background: url(../images/psd.png) no-repeat 16px center;
 }
 
+.telNumbers:focus,
+.psd:focus {
+    border: 1px solid #e13934;
+}
 
 .remb-psd {
     font-family: MicrosoftYaHei;
@@ -179,16 +183,14 @@ header {
 
 .forg-psd a {
     font-size: 14px;
-    color: #e9a941;
+    color: #e13934;
 }
 
 .btn-sub {
     margin-top: 10px;
     width: 422px;
     height: 45px;
-    background-image: linear-gradient(0deg, #e9af45 0%, #e9a941 53%, #e9af45 100%);
-    box-shadow: 0px 4px 6px 0px rgba(138, 56, 11, 0.24);
-    font-family: MicrosoftYaHei;
+    background: #e13934;
     font-size: 20px;
     line-height: 29px;
     letter-spacing: 3px;
@@ -213,7 +215,7 @@ header {
     font-size: 14px;
     font-weight: normal;
     letter-spacing: 1px;
-    color: #e9a941;
+    color: #e13934;
 }
 
 /*复选框*/
@@ -227,6 +229,7 @@ header {
     padding-left: 20px;
     cursor: pointer;
     font-size: 0;
+    vertical-align: middle;
 }
 
 .new-checkBox span {
@@ -256,9 +259,294 @@ header {
 }
 
 .new-checkBox.checked-ture i {
-    color: #e9a941;
+    color: #e13934;
 }
 
 .cao-checkBox {
     display: none;
+}
+
+/* 注册 */
+
+.register {
+    width: 422px;
+    height: 407px;
+    text-align: center;
+    padding: 24px 39px 46px 39px;
+    background: #fff;
+    position: absolute;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1003;
+}
+
+.register-title {
+    font-size: 20px;
+    color: #e13934;
+    font-weight: 600;
+    margin-bottom: 26px;
+}
+
+.register-number {
+    width: 330px;
+    height: 44px;
+    border: 1px solid #dcdbdb;
+    font-size: 15px;
+    color: #000;
+    line-height: 44px;
+    padding: 0 45px;
+    background: url(../images/telNum.png) no-repeat 16px center;
+    margin-bottom: 23px;
+}
+
+.psd-icon {
+    background: url(../images/psd.png) no-repeat 16px center;
+}
+
+.register-number:focus,
+.yzm:focus {
+    border: 1px solid #e13934;
+}
+
+.yzm {
+    width: 219px;
+    height: 45px;
+    border: 1px solid #dcdbdb;
+    font-size: 15px;
+    color: #000;
+    line-height: 44px;
+    margin-bottom: 23px;
+    background: url(../images/yzm.png) no-repeat 16px center;
+    padding: 0 45px;
+}
+
+.yzm-time {
+    width: 104px;
+    height: 47px;
+    text-align: center;
+    line-height: 47px;
+    font-size: 14px;
+    border: 1px solid #e13934;
+    color: #e13934;
+    background: #fff;
+}
+
+.register-btn {
+    width: 422px;
+    height: 46px;
+    background: #e13934;
+    text-align: center;
+    line-height: 46px;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 19px;
+}
+
+.ptxy {
+    color: #e13934;
+}
+
+/* 底部 */
+
+.container-footer {
+    width: 100%;
+    background: #333;
+    height: 100%;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-wrap {
+    width: 1200px;
+    padding: 46px 0 0px 0;
+    margin: 0 auto;
+}
+
+.footer-up {
+    padding-bottom: 39px;
+    box-shadow: 0px 1px 0px 0px rgba(106, 106, 106, 0.35);
+    border-bottom: solid 1px #414141;
+}
+
+.footer-up-left {
+    margin-top: 39px;
+}
+
+.footer-up-left li {
+    float: left;
+    border-right: 1px solid #424242;
+    height: 19px;
+    padding: 0 25px;
+}
+
+.footer-up-left li a {
+    color: #8b8b8b;
+}
+
+.footer-up-left li a:hover {
+    color: #d5d5d5;
+}
+
+.footer-up-left li:first-child {
+    padding-left: 0;
+}
+
+.footer-up-left li:nth-child(6) {
+    border-right: 0;
+}
+
+.footer-up-mid {
+    margin-left: 100px;
+    margin-top: 23px;
+}
+
+.footer-up-mid li {
+    background: #333333;
+    margin-right: 20px;
+}
+
+.footer-up-mid .qq {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: url(../images/ftbg.png) no-repeat;
+    background-position: -108px -76px;
+}
+
+.footer-up-mid .qq:hover {
+    background-position: -108px top;
+}
+
+.footer-up-mid .wb {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: url(../images/ftbg.png) no-repeat;
+    background-position: -185px -76px;
+}
+
+.footer-up-mid .wb:hover {
+    background-position: -185px top;
+}
+
+.footer-up-mid .wx {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: url(../images/ftbg.png) no-repeat;
+    background-position: -262px -76px;
+}
+
+.footer-up-mid .wx:hover {
+    background-position: -262px top;
+}
+
+.kf-up {
+    text-align: center;
+}
+
+.kefu {
+    margin-left: 12px;
+    color: #d5d5d5;
+}
+
+.kefuNumber {
+    font-size: 25px;
+    color: #d5d5d5;
+    margin-top: 19px;
+    text-align: center;
+}
+
+.work-time {
+    font-size: 14px;
+    color: #949494;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.footer-mid-img {
+    padding: 24px 0;
+}
+
+.footbottom_left {
+    text-align: center;
+    padding: 18px 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.footbottom .footbottom_left a {
+    display: inline-block;
+    width: 111px;
+    height: 40px;
+}
+
+.szfw_logo {
+    background: url(../images/cert.png) no-repeat;
+}
+
+.szfw_logo:hover {
+    background: url(../images/cert2.png) no-repeat;
+}
+
+.kx_logo {
+    background: url(../images/kexin.png) no-repeat;
+}
+
+.kx_logo:hover {
+    background: url(../images/kexin2.png) no-repeat;
+}
+
+.aq_logo {
+    background: url(../images/hy_124x47.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.aq_logo:hover {
+    background: url(../images/hy_124x47_1.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.kx_logo,
+.aq_logo {
+    margin-left: 10px;
+}
+
+.footer_copy {
+    line-height: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #737373;
+}
+/* 轮播 */
+.swiper-container {
+    width: 100%;
+    height: 300px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }

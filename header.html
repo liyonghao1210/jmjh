@@ -7,6 +7,7 @@
     <meta name="description" content="" />
     <meta name="Keywords" content="金马巨和" />
     <link rel="stylesheet" type="text/css" href="css/pc_reset.css" />
+    <link rel="stylesheet" href="font/iconfont.css">
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <title>金马巨和</title>
 </head>
@@ -18,7 +19,7 @@
                 <div class="header-top">
                     <div class="left l-height">中国领先艺术品交易平台</div>
                     <div class="right l-height">
-                        <a href="javascript:;" onclick="showMask()" class="dl-padding">登录</a>
+                        <a href="javascript:;" class="dl-padding">登录</a>
                         <span class="shuxian"></span>
                         <a href="#" class="zc-padding">注册</a>
                     </div>
@@ -27,7 +28,9 @@
             </div>
             <div class="header-bottom">
                 <div class="logo left">
-                    <img src="images/logo.png" alt="" srcset="">
+                    <a href="#">
+                        <img src="images/logo.png" alt="" srcset="">
+                    </a>
                 </div>
                 <ul class="nav right">
                     <li class="nav-li1 nav-li">
@@ -72,7 +75,9 @@
                     </li>
                     <li class="nav-li7 nav-li">
                         <img src="images/tel.png" width="29" height="29" alt="" srcset="">
-                        <span class="telNumber">0411-1234-5678</span>
+                        <span class="telNumber">
+                            400-605-8755
+                        </span>
                     </li>
                     <div class="clear"></div>
                 </ul>
@@ -80,8 +85,8 @@
             </div>
         </header>
         <div id="mask" class="mask" onclick="hideMask()"></div>
-        <!-- 注册 -->
-        <div class="login">
+        <!-- 登录 -->
+        <div class="login hide">
             <h5 class="ac">登录</h5>
             <form action="">
                 <input class="telNumbers" type="text" name="" placeholder="请输入您的手机号" />
@@ -103,23 +108,39 @@
                 </div>
             </form>
         </div>
+        <!-- 注册 -->
+        <div class=" register hide">
+            <h5 class="register-title">注册</h5>
+            <form action=""></form>
+            <input class="register-number" type="text" name="" placeholder="请输入您的手机号" />
+            <div>
+                <input class="yzm left" type="text" name="" placeholder="请输入验证码">
+                <input class="yzm-time right" type="button" id="btn" value="获取验证码" onclick="settime(this)" />
+                <div class="clear"></div>
+            </div>
+            <input class="register-number psd-icon" type="password" name="" placeholder="请输入密码" />
+            <input class="register-number psd-icon" type="password" name="" placeholder="请确认密码" />
+            <input class="register-btn" type="button" value="立即注册" />
+            <ul>
+                <li class="left">
+                    <input type="checkbox" data-title="" class="cao-checkBox" value="">
+                    <span>我已阅读并接受</span>
+                    <a class="ptxy" href="#">《平台协议》</a>
+                </li>
+                <li class="right login-register" style="margin-top: 0;">
+                    <span>已有账号，
+                        <a href="#">快速登录</a>
+                    </span>
+                </li>
+                <div class="clear"></div>
+            </ul>
+            </form>
+        </div>
     </div>
 </body>
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/form.js"></script>
 <pre class="html" name="code"></pre>
-<script type="text/javascript">
-    //兼容火狐、IE8   
-    //显示遮罩层    
-    function showMask() {
-        $("#mask").css("height", $(document).height());
-        $("#mask").css("width", $(document).width());
-        $("#mask").show();
-    }
-    //隐藏遮罩层  
-    function hideMask() {
-        $("#mask").hide();
-    }
-</script>
+<script type="text/javascript" src="js/header.js"></script>
 
 </html>

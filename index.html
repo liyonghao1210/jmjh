@@ -7,12 +7,41 @@
     <meta name="description" content="" />
     <meta name="Keywords" content="" />
     <link rel="stylesheet" type="text/css" href="css/pc_reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <title>金马巨和</title>
 </head>
 
 <body>
-    <div>middle</div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/b1.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="images/b2.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="images/b3.jpg" alt="" srcset=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
 </body>
-
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
 </html>
