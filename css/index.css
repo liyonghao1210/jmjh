@@ -93,6 +93,7 @@ header {
 .nav-li2:hover .nav-hover1,
 .nav-li3:hover .nav-hover2 {
   display: block;
+  z-index: 100;
 }
 
 .nav-li2 ul,
