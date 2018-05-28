@@ -47,16 +47,16 @@ body, h1, h2, h3, h4, h5, h6, hr, p,
     table { border-collapse: collapse; border-spacing: 0;}
    
 	input::-webkit-input-placeholder {
-		color: #ccc !important; /* WebKit browsers /
+        color: #ccc !important; 
 	}
 	input:-moz-placeholder {
-		color: #fff !important; / Mozilla Firefox 4 to 18 /
+		color: #fff !important; 
 	}
 	input::-moz-placeholder {
-		color: #fff !important; / Mozilla Firefox 19+ /
+		color: #fff !important;
 	}
 	input:-ms-input-placeholder {
-		color: #fff !important; / Internet Explorer 10+ */
+		color: #fff !important; 
 	}
 
 	html {
