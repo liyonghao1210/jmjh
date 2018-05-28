@@ -1,0 +1,264 @@
+body {
+    background: #f2f2f2;
+}
+
+.container {
+    width: 100%;
+    background: #fff;
+    height: 100%;
+}
+
+/* 头部 */
+
+header {
+    width: 100%;
+    height: 116px;
+}
+
+.header-top-wrap {
+    width: 100%;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.header-top {
+    max-width: 1200px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.l-height {
+    line-height: 35px;
+    margin-left: 22px;
+}
+
+.dl-padding {
+    margin-right: 23px;
+    color: #e13934;
+}
+
+.zc-padding {
+    margin-left: 23px;
+}
+
+.shuxian {
+    border-left: 1px solid #dbdbdb;
+}
+
+.header-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.logo,
+.nav {
+    line-height: 80px;
+}
+
+.nav .nav-li {
+    float: left;
+    margin-left: 28px;
+}
+
+.nav .nav-li a {
+    font-size: 18px;
+    color: #3b3b3b;
+}
+
+.nav .nav-li .active {
+    color: #e13934;
+    border-bottom: 3px solid #e13934;
+    display: inline-block;
+    height: 65px;
+}
+
+.telNumber {
+    font-size: 18px;
+    color: #e13934;
+    margin-left: 8px;
+}
+
+.nav-li7 img {
+    margin-top: -8px;
+}
+
+.nav-li2,
+.nav-li3 {
+    position: relative;
+}
+
+.nav-li2:hover .nav-hover1,
+.nav-li3:hover .nav-hover2 {
+    display: block;
+}
+
+.nav-li2 ul,
+.nav-li3 ul {
+    position: absolute;
+}
+
+.nav-hover1,
+.nav-hover2 {
+    background: #e13934;
+    top: 62px;
+}
+
+.nav-hover1 li .nav-a:hover,
+.nav-hover2 li .nav-a:hover {
+    background: #d50616;
+}
+
+.nav-hover1 li .nav-a,
+.nav-hover2 li .nav-a {
+    display: block;
+    padding: 0 28px;
+    color: #fff;
+    font-size: 17px;
+    height: 34px;
+    line-height: 34px;
+}
+
+.mask {
+    position: absolute;
+    top: 0px;
+    filter: alpha(opacity=47);
+    background-color: #000;
+    z-index: 1002;
+    left: 0px;
+    opacity: 0.47;
+    -moz-opacity: 0.47;
+}
+
+.login {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 422px;
+    height: 346px;
+    padding: 24px 34px 0 34px;
+    background: #fff;
+    z-index: 1003;
+}
+
+.login h5 {
+    font-size: 20px;
+    color: #e13934;
+    letter-spacing: 5px;
+    margin-bottom: 26px;
+}
+
+.telNumbers,.psd{
+    width: 330px;
+    height: 44px;
+    border: 1px solid #dcdbdb;
+    font-size: 15px;
+    color: #000;
+    line-height: 44px;
+    padding: 0 45px;
+    background: url(../images/telNum.png) no-repeat 16px center;
+    margin-bottom: 29px;
+}
+.psd{
+    background: url(../images/psd.png) no-repeat 16px center;    
+}
+.telNumbers:focus,.psd:focus{
+    border: 1px solid #e13934;
+}
+
+
+.remb-psd {
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    line-height: 29px;
+    letter-spacing: 2px;
+    color: #808080;
+}
+
+.forg-psd a {
+    font-size: 14px;
+    color: #e9a941;
+}
+
+.btn-sub {
+    margin-top: 10px;
+    width: 422px;
+    height: 45px;
+    background-image: linear-gradient(0deg, #e9af45 0%, #e9a941 53%, #e9af45 100%);
+    box-shadow: 0px 4px 6px 0px rgba(138, 56, 11, 0.24);
+    font-family: MicrosoftYaHei;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 3px;
+    color: #fffefe;
+    cursor: pointer;
+}
+
+.login-register {
+    text-align: right;
+    margin-top: 19px;
+}
+
+.login-register span {
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #656565;
+}
+
+.login-register a {
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #e9a941;
+}
+
+/*复选框*/
+
+.new-checkBox {
+    position: relative;
+    height: 20px;
+    line-height: 18px;
+    display: inline-block;
+    margin-right: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 0;
+}
+
+.new-checkBox span {
+    padding: 0 6px;
+    float: left;
+    display: inline-block;
+    height: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.new-checkBox i {
+    color: #999;
+    position: absolute;
+    top: 1px;
+    display: block;
+    left: 0;
+    font-size: 18px;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.new-checkBox.checked-ture i {
+    color: #e9a941;
+}
+
+.cao-checkBox {
+    display: none;
+}

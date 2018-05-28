@@ -1,0 +1,98 @@
+body{
+	background-color:#fff;
+	width:100%;
+	height:100%;
+    color: #555;
+    font-size: 14px;
+}
+body, h1, h2, h3, h4, h5, h6, hr, p,
+    blockquote,   /* structural elements 结构元素 */
+    dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+    pre, /* text formatting elements 文本格式元素 */
+    form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+    th, td, /* table elements 表格元素 */
+    img/* img elements 图片元素 */{
+		border:medium none;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		font-family: "Microsoft YaHei", "Arial", "黑体", "宋体", sans-serif;
+    }
+    /** 设置默认字体 **/
+    html,body,div,span,h1,h2,h3,h4,h5,h6,p,a,address,img,dl,dt,dd,ol,nav,ul,nav li,label,article,aside,footer,header,hgroup,menu,nav,output,time,mark,audio,video{
+        font-size:14px;
+        color: #555;
+        font-style: normal;
+        font-weight: normal;
+    }
+	span{font-size: 14px;}
+    h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal;}
+    input, textarea, select, button {
+        font: 14px "Microsoft YaHei", "Arial", "黑体", "宋体", sans-serif;
+    }
+    /** 重置列表元素 **/
+    ul, ol,{ list-style: none; }
+    /** 重置超链接元素 **/
+    a,input,textarea,div{ text-decoration: none; -webkit-tap-highlight-color:rgba(0,0,0,0);/*去掉a标签点击后蓝背景属性*/}
+    a:hover { text-decoration: none; }
+    a:link {color: none;}		/* 未访问的链接 */
+	a:visited {color: none;background-color: none;}	/* 已访问的链接 */
+	a:hover {color: none;}	/* 鼠标移动到链接上 */
+	a:active {color: none;}	/* 选定的链接 */
+	/*a {outline-style:none;-webkit-touch-callout:none;}*/
+	a:focus{outline:0;}
+    /** 重置图片元素 **/
+    img{ border:0px;vertical-align: middle;}
+    /** 重置表格元素 **/
+    table { border-collapse: collapse; border-spacing: 0;}
+   
+	input::-webkit-input-placeholder {
+		color: #ccc !important; /* WebKit browsers /
+	}
+	input:-moz-placeholder {
+		color: #fff !important; / Mozilla Firefox 4 to 18 /
+	}
+	input::-moz-placeholder {
+		color: #fff !important; / Mozilla Firefox 19+ /
+	}
+	input:-ms-input-placeholder {
+		color: #fff !important; / Internet Explorer 10+ */
+	}
+
+	html {
+        overflow-y: scroll;
+    }
+/*====================公共样式部分==========================*/
+input{
+	 outline:medium;
+}
+
+input[type=button], input[type=submit], input[type=file], button {
+    cursor: pointer; 
+}
+
+
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear{
+ 	clear:both;
+ }
+.hide{
+    display: none;
+}
+.show{
+    display:block;
+}
+.al {
+    text-align: left;
+}
+.ac {
+    text-align: center;
+}
+.ar {
+    text-align: right;
+}
