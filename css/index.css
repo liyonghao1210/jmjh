@@ -1112,12 +1112,14 @@ td {
 .ysp_list{
   width: 1198px;
   margin: 0 auto;
-  background: #fff;
-  border: solid 1px #dfdfdf;
+  margin-bottom: 20px;
 
 }
 .ysp_lists{
   padding: 24px 44px 24px 16px;
+  background: #fff;
+  border: solid 1px #dfdfdf;
+  margin-bottom: 20px;
 }
 .ysp_listContent{
   margin-left: 24px;
@@ -1137,13 +1139,22 @@ td {
   padding-top: 30px; 
   border-right: solid 1px #dfdfdf;
 }
-.ysp_listContMid dl{
-  width: 33.3%;
-  text-align: center;
+
+.ysp_list_up{
+    text-align: center;
+}
+.ys_lis_mid{
+    text-align: center;
+    width: 50%;
+}
+.ysp_list_down{
+    text-align: center;
+    width: 25%;
 }
 .ysp_listContMid_span1{
   font-size: 32px;
   color: #e13934;
+  font-family: "Arial";
 }
 .ysp_listContMid_span2{
   font-size: 22px;
@@ -1156,4 +1167,61 @@ td {
 .ysp_listContMid dl dd{
   font-size: 15px;
   color: #919191;
+}
+.ysp_listContMid dl dt{
+    margin-bottom: 10px;
+}
+.ysp_lx{
+    margin-top: 17px;
+}
+.add_sc{
+    display: block;
+    width: 89px;
+	height: 32px;
+	border-radius: 8px;
+    border: solid 1px #cbcbcb;
+    text-align: center;
+    line-height: 32px;
+    margin-top: 22px;
+}
+.sc_success{
+    width: 188px;
+    height: 50px;
+    border-radius: 5px;
+    line-height: 50px;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(73, 73, 73, .5);
+    color: #fff;
+    text-align: center;
+}
+.looks_cont{
+    display: block;
+    width: 166px;
+	height: 44px;
+	background-color: #e13934;
+    border-radius: 5px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 89px;
+}
+.sc_ck{
+    margin-top: 50px;
+    width: 100%;
+}
+.sc_ck .sc_ck_span1{
+    color: #969696;
+    padding-left: 23px;
+    background: url(../images/liulan.png) no-repeat center left;
+}
+.sc_ck .sc_ck_span2{
+    color: #969696;
+    padding-left: 23px;
+    background: url(../images/shoucang.png) no-repeat center left;
 }
