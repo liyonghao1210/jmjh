@@ -1071,3 +1071,89 @@ td {
 .zstImg{
   background: #fff;
 }
+/* 艺术品购买 */
+.ysp_wrap{
+  width: 100%;
+}
+.ysp_choice{
+  width: 1122px;
+  padding: 30px 39px;
+  background: #fff;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 28px;
+}
+.sj_time{
+  margin-bottom: 23px;
+}
+.sj_time li .sj_time_title,
+.buy_money_title {
+  font-size: 16px;
+  color: #7f7f7f;
+}
+.sj_time li a,
+.buy_money li a{
+  font-size: 15px;
+  color: #363636;
+  padding: 7px 15px;
+  margin: 0 20px;
+}
+.sj_time li a:hover,
+.buy_money li a:hover{
+  background: #e13934;
+  color : #fff;
+  border-radius: 5px;
+}
+.choiceActived {
+  background: #e13934;
+  color : #fff !important;
+  border-radius: 5px;
+}
+.ysp_list{
+  width: 1198px;
+  margin: 0 auto;
+  background: #fff;
+  border: solid 1px #dfdfdf;
+
+}
+.ysp_lists{
+  padding: 24px 44px 24px 16px;
+}
+.ysp_listContent{
+  margin-left: 24px;
+}
+.ysp_listContent h2{
+  font-size: 19px;
+  font-weight: 600;
+  color: #242424;
+}
+.ysp_listContent p{
+  font-size: 16px;
+  margin-top: 14px;
+  color: #474646;
+}
+.ysp_listContMid{
+  width: 616px;
+  padding-top: 30px; 
+  border-right: solid 1px #dfdfdf;
+}
+.ysp_listContMid dl{
+  width: 33.3%;
+  text-align: center;
+}
+.ysp_listContMid_span1{
+  font-size: 32px;
+  color: #e13934;
+}
+.ysp_listContMid_span2{
+  font-size: 22px;
+  color: #e13934;
+}
+.ysp_listContMidName{
+  color: #52504f;
+  font-size: 22px;
+}
+.ysp_listContMid dl dd{
+  font-size: 15px;
+  color: #919191;
+}
