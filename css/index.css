@@ -1761,7 +1761,8 @@ ul.breadcrumb li a {
 .chanpin_detail h2,
 .changpin_ms h2,
 .hot_chanpin h2,
-.buy_methodWrap h2 {
+.buy_methodWrap h2,
+.cpTj h2 {
     font-size: 18px;
     color: #323232;
     border-left: 5px solid #e13934;
@@ -2241,7 +2242,13 @@ ul.breadcrumb li a {
 }
 
 /* 个人中心 */
-
+.my_center .pers_center{
+    background: url(../images/user.png) no-repeat center left;
+    color: #e13934;
+}
+.centerLogin{
+    color: #858484;
+}
 .center_Wrap {
     width: 1200px;
     margin: 0 auto;
@@ -2297,52 +2304,62 @@ ul.breadcrumb li a {
 .center_right {
     width: 971px;
     background: #fff;
-    padding-top: 23px;
+    padding: 23px 0 58px 0;
 }
 
-.right_header { 
+.right_header {
     padding-bottom: 18px;
     border-bottom: 1px solid #e3e3e3;
 }
-.right_headerDiv1{
+
+.right_headerDiv1 {
     margin-left: 44px;
 }
-.right_headerDiv1 img{
+
+.right_headerDiv1 img {
     border-radius: 50%;
 }
-.useName{
+
+.useName {
     font-size: 17px;
     color: #232323;
     line-height: 49px;
 }
-.modify_inf{
+
+.modify_inf {
     font-size: 15px;
     color: #e13934;
 }
-.modify_inf::after{
-    content: " >";
 
+.modify_inf::after {
+    content: " >";
 }
-.userInfWrap{
+
+.userInfWrap {
     margin-left: 15px;
 }
-.right_headerDiv2{
+
+.right_headerDiv2 {
     margin-left: 81px;
 }
-.right_headerDiv2P1{
+
+.right_headerDiv2P1 {
     font-size: 14px;
     color: #3e3d3d;
     line-height: 24px;
 }
-.saveWrap{
+
+.saveWrap {
     margin-top: 13px;
 }
-.saveSpan1{
+
+.saveSpan1 {
     color: #e13934;
     vertical-align: middle;
 }
-.saveSpan2{
-    position:relative;
+
+.saveSpan2 {
+    position: relative;
     display: inline-block;
     width: 235px;
     height: 11px;
@@ -2352,6 +2369,7 @@ ul.breadcrumb li a {
     vertical-align: middle;
     margin-left: 8px;
 }
+
 .saveSpan2 span {
     margin: auto 1px;
     position: absolute;
@@ -2364,36 +2382,44 @@ ul.breadcrumb li a {
     border-radius: 10px;
     background: #e13934;
 }
-.saveSpan3{
+
+.saveSpan3 {
     color: #e13934;
-    vertical-align: middle;    
+    vertical-align: middle;
 }
-.bd_tel{
+
+.bd_tel {
     margin-top: 11px;
     padding-left: 26px;
     background: url(../images/center1.png) no-repeat center left;
 }
-.bd_tel span{
+
+.bd_tel span {
     color: #626161;
 }
-.header_btnGroup{
+
+.header_btnGroup {
     margin-right: 10px;
     line-height: 88px;
 }
-.header_btnGroup a{
+
+.header_btnGroup a {
     padding: 12px 16px 12px 37px;
     border-radius: 8px;
     border: solid 1px #d5d5d5;
 }
-.mySc{
+
+.mySc {
     background: url(../images/sc.png) no-repeat 15px center;
 }
+
 .header_btnGroup .n_email {
     position: relative;
     background: url(../images/email.png) no-repeat 11px center;
     padding-right: 26px;
 }
-.n_email span{
+
+.n_email span {
     position: absolute;
     top: 3px;
     right: 7px;
@@ -2407,3 +2433,183 @@ ul.breadcrumb li a {
     text-align: center;
     line-height: 18px;
 }
+
+.my_zc {
+    padding: 36px 10px 37px 48px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.my_szSpan1 {
+    font-size: 15px;
+    color: #222222;
+}
+
+.my_szSpan2 {
+    font-size: 22px;
+    color: #e13934;
+    margin-left: 16px;
+}
+
+.my_szSpan3 {
+    font-size: 15px;
+    color: #e13934;
+}
+
+.cz_btns {
+    margin-left: 117px;
+    margin-bottom: 64px;
+}
+
+.cz_btns .cz {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    background-color: #e13934;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.cz_btns .tx {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    background-color: #bebebe;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.center_table,.tuijian_table {
+    width: 100%;
+    border: 0;
+    margin-bottom: 0;
+}
+
+.center_table tr td {
+    border: 0;
+    padding: 8px 0;
+    text-align: left;
+}
+
+.center_table tr:first-child td {
+    color: #757575;
+    font-size: 15px;
+}
+
+.center_table tr:last-child td {
+    color: #555555;
+    font-size: 20px;
+}
+
+.my_dingdan {
+    padding: 55px 171px 86px 121px;
+}
+
+.dingdan {
+    font-size: 14px;
+    color: #707070;
+}
+
+.ddNumber span {
+    font-size: 17px;
+    color: #e13934;
+}
+
+.cpTj {
+    padding: 0 10px 0 39px;
+}
+.cpin_list li:nth-child(odd) {
+    float: left;
+}
+.cpin_list li:nth-child(even) {
+    float: right;
+}
+.cpinLi{
+    width: 438px;
+    padding: 8px;
+    border: 1px solid #e3e3e3;
+    margin-bottom: 8px;
+}
+.chanpin_right{
+    margin-left: 15px;
+    padding-top: 12px;
+}
+.chanpinTitle{
+    font-size: 17px;
+    color: #1a1a1a;
+}
+.chanpinNumber{
+    font-size: 14px;
+    margin-top: 11px;
+    color: #747474;
+    margin-bottom: 15px;
+}
+.tuijian_table{
+    border: 0;
+}
+.tj_buyWrap{
+    margin-top: 17px;
+}
+.tuijian_table tr td{
+    padding-bottom: 2px;
+    width: 80px;
+    border: 0;
+}
+.tj_money{
+    font-size: 20px;
+    color: #e13934;
+}
+.tj_money span{
+    color: #e13934;
+    font-size: 15px;
+}
+.lx_name{
+    font-size: 16px;
+    color: #353434;
+}
+.tuijian_table tr:last-child td{
+    font-size: 13px;
+    color: #737373;
+}
+.buy_jindu{
+    position: relative;
+    display: inline-block;
+    width: 94px;
+	height: 6px;
+    background: #e9e9e9;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+.buy_jindu span{   
+    margin: auto 1%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 1%;
+    display: inline-block;
+    height: 6px;
+    background: #e13934;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+.buy_now{
+    display: inline-block;
+    width: 80px;
+    height: 26px;
+    background: #e13934;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 26px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+
+
