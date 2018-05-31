@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="Keywords" content="金马巨和" />
+    <link rel="stylesheet" type="text/css" href="css/pc_reset.css" />
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>金马巨和</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header>
+            <div class="header-top-wrap">
+                <div class="header-top">
+                    <div class="left l-height">中国领先艺术品交易平台</div>
+                    <div class="right l-height">
+                        <ul class="userWrap">
+                            <li class="left user_ck my_goumai">
+                                <a href="#">我的购买</a>
+                            </li>
+                            <li class="left user_ck my_shoucang">
+                                <a href="#">我的收藏</a>
+                            </li>
+                            <li class="left user_ck my_center">
+                                <a href="#">个人中心</a>
+                            </li>
+                            <li class="left">
+                                <a href="javascript:;" class="dl-padding">登录</a>
+                            </li>
+                            <li class="left">
+                                <span class="shuxian"></span>
+                            </li>
+                            <li class="left">
+                                <a href="#" class="zc-padding">注册</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="logo left">
+                    <a href="#">
+                        <img src="images/logo.png" alt="" srcset="">
+                    </a>
+                </div>
+                <ul class="nav right">
+                    <li class="nav-li1 nav-li">
+                        <a class="active" href="#">首页</a>
+                    </li>
+                    <li class="nav-li2 nav-li">
+                        <a href="#">艺术品购买</a>
+                        <ul class="nav-hover1 hide">
+                            <li class="activeHover">
+                                <a class="nav-a" href="#">瓷器</a>
+                            </li>
+                            <li>
+                                <a class="nav-a" href="#">书画</a>
+                            </li>
+                            <li>
+                                <a class="nav-a" href="#">杂项</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-li3 nav-li">
+                        <a href="#">艺术品售卖</a>
+                        <ul class="nav-hover2 hide">
+                            <li class="activeHover">
+                                <a class="nav-a" href="#">瓷器</a>
+                            </li>
+                            <li>
+                                <a class="nav-a" href="#">书画</a>
+                            </li>
+                            <li>
+                                <a class="nav-a" href="#">杂项</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-li4 nav-li">
+                        <a href="#">安全保障</a>
+                    </li>
+                    <li class="nav-li5 nav-li">
+                        <a href="#">新手指南</a>
+                    </li>
+                    <li class="nav-li6 nav-li">
+                        <a href="#">联系我们</a>
+                    </li>
+                    <li class="nav-li7 nav-li">
+                        <img src="images/tel.png" width="29" height="29" alt="" srcset="">
+                        <span class="telNumber">
+                            400-605-8755
+                        </span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </div>
+
+            <div id="mask" class="mask" onclick="hideMask()"></div>
+            <!-- 登录 -->
+            <div class="login hide">
+                <h5 class="ac">登录</h5>
+                <form action="">
+                    <input class="telNumbers" type="text" name="" placeholder="请输入您的手机号" />
+                    <input class="psd" type="password" name="" placeholder="请输入密码" />
+                    <ul class="login-choice">
+                        <li class="remb-psd left">
+                            <input type="checkbox" data-title="记住密码" class="cao-checkBox" value="">
+                        </li>
+                        <li class="forg-psd right">
+                            <a href="#">忘记密码？</a>
+                        </li>
+                        <div class="clear"></div>
+                    </ul>
+                    <input class="btn-sub" type="button" value="登录" />
+                    <div class="login-register">
+                        <span>还没有账号？
+                            <a href="#">马上注册</a>
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <!-- 注册 -->
+            <div class=" register hide">
+                <h5 class="register-title">注册</h5>
+                <form action=""></form>
+                <input class="register-number" type="text" name="" placeholder="请输入您的手机号" />
+                <div>
+                    <input class="yzm left" type="text" name="" placeholder="请输入验证码">
+                    <input class="yzm-time right" type="button" id="btn" value="获取验证码" onclick="settime(this)" />
+                    <div class="clear"></div>
+                </div>
+                <input class="register-number psd-icon" type="password" name="" placeholder="请输入密码" />
+                <input class="register-number psd-icon" type="password" name="" placeholder="请确认密码" />
+                <input class="register-btn" type="button" value="立即注册" />
+                <ul>
+                    <li class="left">
+                        <input type="checkbox" data-title="" class="cao-checkBox" value="">
+                        <span>我已阅读并接受</span>
+                        <a class="ptxy" href="#">《平台协议》</a>
+                    </li>
+                    <li class="right login-register" style="margin-top: 0;">
+                        <span>已有账号，
+                            <a href="#">快速登录</a>
+                        </span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </header>
+        <!-- 内容区 Start -->
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li class="home">
+                <a href="#">首页</a>
+            </li>
+            <li>
+                <a href="#">艺术品购买 </a>
+            </li>
+            <li>
+                <a href="#">产品详情 </a>
+            </li>
+            <li>立即购买</li>
+        </ul>
+        <div class="buy_methodWrap">
+            <p class="method_title">填写并核对订单信息</p>
+            <h2>购买方式</h2>
+            <!-- tab切换 -->
+            <div class="tabWrap">
+                <div class="tab-head">
+                    <a class="normal-li" href="###">寄存</a>
+                    <a class=" selected-li" href="###">邮寄</a>
+                </div>
+                <div class="add_address">
+                    <img src="images/address.png" width="141" height="138" alt="">
+                    <p>您还没有添加收货地址</p>
+                    <a class="add_add" href="###">添加收货地址</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 内容区 End -->
+
+        <!-- footer -->
+        <div class="container-footer">
+            <footer>
+                <ul class="footer-wrap">
+                    <li class="footer-up">
+                        <ul class="left footer-up-left">
+                            <li>
+                                <a href="#">常见问题</a>
+                            </li>
+                            <li>
+                                <a href="#">合作伙伴</a>
+                            </li>
+                            <li>
+                                <a href="#">行业资讯</a>
+                            </li>
+                            <li>
+                                <a href="#">安全保障</a>
+                            </li>
+                            <li>
+                                <a href="#">新手指导</a>
+                            </li>
+                            <li>
+                                <a href="#">联系我们</a>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                        <ul class="left footer-up-mid">
+                            <li class="left">
+                                <a class="qq" href="#"></a>
+                            </li>
+                            <li class="left">
+                                <a class="wb" href="#"></a>
+                            </li>
+                            <li class="left">
+                                <a class="wx" href="#"></a>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                        <ul class="right footer-up-down">
+                            <li class="kf-up">
+                                <i>
+                                    <img src="images/kf.png" alt="">
+                                    <span class="kefu">在线客服</span>
+                                </i>
+                            </li>
+                            <li class="kefuNumber">
+                                400-605-8755
+                            </li>
+                            <li class="work-time">（周一至周五：9:00-18:00）</li>
+                        </ul>
+                        <div class="clear"></div>
+                    </li>
+                    <li class="footbottom">
+                        <div class="footbottom_left">
+                            <a class="szfw_logo" href="#" target="_blank"></a>
+                            <a class="kx_logo" href="#" target="_blank"></a>
+                            <a class="aq_logo" href="#" target="_blank"></a>
+                        </div>
+                        <div class="footer_copy">
+                            ©2018金马巨和 All rights resered | 大连金马巨和发展有限公司 | 辽ICP备16011121号
+                        </div>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/form.js"></script>
+<pre class="html" name="code"></pre>
+<script type="text/javascript" src="js/header.js"></script>
+
+</html>
