@@ -28,10 +28,10 @@
                                 <a href="#">我的收藏</a>
                             </li>
                             <li class="left user_ck my_center">
-                                <a href="#">个人中心</a>
+                                <a class="pers_center" href="#">个人中心</a>
                             </li>
                             <li class="left">
-                                <a href="javascript:;" class="dl-padding">登录</a>
+                                <a href="javascript:;" class="dl-padding centerLogin">登录</a>
                             </li>
                             <li class="left">
                                 <span class="shuxian"></span>
@@ -52,7 +52,8 @@
                 </div>
                 <ul class="nav right">
                     <li class="nav-li1 nav-li">
-                        <a class="active" href="#">首页</a>
+                        <!-- class="active" 添加选中样式 -->
+                        <a href="#">首页</a>
                     </li>
                     <li class="nav-li2 nav-li">
                         <a href="#">艺术品购买</a>
@@ -161,57 +162,97 @@
                 <a href="#">首页</a>
             </li>
             <li>
-                <a href="#">艺术品购买 </a>
+                <a href="#">个人中心</a>
             </li>
-            <li>
-                <a href="#">产品详情 </a>
-            </li>
-            <li>立即购买</li>
+            <li>资金管理</li>
         </ul>
-        <div class="buy_methodWrap">
-            <p class="method_title">填写并核对订单信息</p>
-            <h2>购买方式</h2>
-            <!-- tab切换 -->
-            <div class="tabWrap">
-                <div class="tab-head">
-                    <a class="normal-li" href="###">寄存</a>
-                    <a class=" selected-li" href="###">邮寄</a>
+        <ul class="center_Wrap">
+            <li class="left center_left">
+                <ul>
+                    <li class="center_title1 center_title">个人信息</li>
+                    <li>
+                        <a href="###">银行卡管理</a>
+                    </li>
+                    <li>
+                        <a href="###">收货地址管理</a>
+                    </li>
+                    <li>
+                        <a href="###">账号安全</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="center_title2 center_title">资金明细</li>
+                    <li>
+                        <a class="active" href="###">资金管理</a>
+                    </li>
+                    <li>
+                        <a href="###">交易记录</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="center_title3 center_title">订单管理</li>
+                    <li>
+                        <a href="###">我的寄卖</a>
+                    </li>
+                    <li>
+                        <a href="###">我的购买</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="right center_right">
+                <div class="right_header">
+                    <div class="right_headerDiv1 left">
+                        <img class="left" src="images/yspImg.png" width="81" height="81" alt="">
+                        <div class="left userInfWrap">
+                            <p class="useName">上午好，张三！</p>
+                            <a class="modify_inf" href="###">修改个人信息</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="right header_btnGroup">
+                        <a class="mySc" href="###">我的收藏</a>
+                        <a class="n_email" href="###">
+                            站内信
+                            <span>10</span>
+                        </a>
+                    </div>
+                    <div class="clear"></div>
                 </div>
-                <div class="inputWrap">
-                    <h4>收货地址</h4>
-                    <ul class="input_iptWrap">
-                        <li>
-                            <span>收货人</span>
-                            <input class="ipt_kuang" type="text" value="">
+                <div class="my_zc zj_my">
+                    <h2>资金管理</h2>
+                    <ul class="cz_wrap">
+                        <li class="left">
+                            <span class="my_szSpan1">我的总资产</span>
+                            <span class="my_szSpan2">105050.00</span>
+                            <span class="my_szSpan3">元</span>
                         </li>
-                        <li>
-                            <span>手机号码</span>
-                            <input class="ipt_kuang" type="text" value="">
+                        <li class="left cz_btns">
+                            <a class="cz" href="###">充值</a>
+                            <a class="tx" href="###">提现</a>
                         </li>
-                        <li>
-                            <div>
-                                <span>所在地区</span>
-                                <select class="selectWrap" id="s_province" name="s_province"></select>
-                                <select class="selectWrap" id="s_city" name="s_city"></select>
-                                <select class="selectWrap" id="s_county" name="s_county"></select>
-                            </div>
-                            <div id="show"></div>
-                        </li>
-                        <li>
-                            <span>具体地址</span>
-                            <input class="ipt_kuang" type="text" value="">
-                        </li>
-                        <li>
-                            <span>邮政编码</span>
-                            <input class="ipt_kuang" type="text" value="">
-                        </li>
-                        <li class="bc">
-                            <input class="iptSub" type="submit" value="保存">
-                        </li>
+                        <div class="clear"></div>
                     </ul>
+                    <table class="center_table">
+                        <tr>
+                            <td>可用余额（元）</td>
+                            <td>预期收回（元）</td>
+                            <td>冻结资金（元）</td>
+                            <td>预期涨幅（元）</td>
+                            <td>累计购买（元）</td>
+                        </tr>
+                        <tr>
+                            <td>2000.00</td>
+                            <td>2000.00</td>
+                            <td>2000.00</td>
+                            <td>100.00</td>
+                            <td>100.00</td>
+                        </tr>
+                    </table>
                 </div>
-            </div>
-        </div>
+            </li>
+            <div class="clear"></div>
+        </ul>
 
         <!-- 内容区 End -->
 
@@ -286,18 +327,5 @@
 <script type="text/javascript" src="js/form.js"></script>
 <pre class="html" name="code"></pre>
 <script type="text/javascript" src="js/header.js"></script>
-<!-- 省市联动 -->
-<script class="resources library" type="text/javascript" src="js/area.js"></script>
-<script type="text/javascript">
-    var Gid = document.getElementById;
-    var showArea = function () {
-        Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" +
-            Gid('s_city').value + " - 县/区" +
-            Gid('s_county').value + "</h3>"
-    }
-    _init_area();
-    // 有下面这段报错。不知什么原因
-    // Gid('s_county').setAttribute('onchange', 'showArea()');
-</script>
 
 </html>

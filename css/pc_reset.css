@@ -80,6 +80,9 @@ input[type=button], input[type=submit], input[type=file], button {
 }
 .clear{
  	clear:both;
+ 	height:0;
+ 	line-height:0;
+ 	font-size:0;
  }
 .hide{
     display: none;

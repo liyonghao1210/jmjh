@@ -28,10 +28,10 @@
                                 <a href="#">我的收藏</a>
                             </li>
                             <li class="left user_ck my_center">
-                                <a href="#">个人中心</a>
+                                <a class="pers_center" href="#">个人中心</a>
                             </li>
                             <li class="left">
-                                <a href="javascript:;" class="dl-padding">登录</a>
+                                <a href="javascript:;" class="dl-padding centerLogin">登录</a>
                             </li>
                             <li class="left">
                                 <span class="shuxian"></span>
@@ -52,7 +52,8 @@
                 </div>
                 <ul class="nav right">
                     <li class="nav-li1 nav-li">
-                        <a class="active" href="#">首页</a>
+                        <!-- class="active" 添加选中样式 -->
+                        <a href="#">首页</a>
                     </li>
                     <li class="nav-li2 nav-li">
                         <a href="#">艺术品购买</a>
@@ -161,57 +162,53 @@
                 <a href="#">首页</a>
             </li>
             <li>
-                <a href="#">艺术品购买 </a>
+                <a href="#">个人中心</a>
             </li>
-            <li>
-                <a href="#">产品详情 </a>
-            </li>
-            <li>立即购买</li>
+            <li>资金管理</li>
         </ul>
-        <div class="buy_methodWrap">
-            <p class="method_title">填写并核对订单信息</p>
-            <h2>购买方式</h2>
-            <!-- tab切换 -->
-            <div class="tabWrap">
-                <div class="tab-head">
-                    <a class="normal-li" href="###">寄存</a>
-                    <a class=" selected-li" href="###">邮寄</a>
+        <ul class="center_Wrap">
+            <li class="left center_left">
+                <ul>
+                    <li class="center_title1 center_title">个人信息</li>
+                    <li>
+                        <a href="###">银行卡管理</a>
+                    </li>
+                    <li>
+                        <a href="###">收货地址管理</a>
+                    </li>
+                    <li>
+                        <a href="###">账号安全</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="center_title2 center_title">资金明细</li>
+                    <li>
+                        <a class="active" href="###">资金管理</a>
+                    </li>
+                    <li>
+                        <a href="###">交易记录</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="center_title3 center_title">订单管理</li>
+                    <li>
+                        <a href="###">我的寄卖</a>
+                    </li>
+                    <li>
+                        <a href="###">我的购买</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="right center_right">
+                <div class="bringSuccess">
+                    <img src="images/success.png" width="68" height="68" alt="">
+                    <p class="wait">提现申请成功，请等待处理</p>
+                    <p class="wait_time">预计1-2个工作日到账</p>
+                    <a class="know" href="###">知道了</a>
                 </div>
-                <div class="inputWrap">
-                    <h4>收货地址</h4>
-                    <ul class="input_iptWrap">
-                        <li>
-                            <span>收货人</span>
-                            <input class="ipt_kuang" type="text" value="">
-                        </li>
-                        <li>
-                            <span>手机号码</span>
-                            <input class="ipt_kuang" type="text" value="">
-                        </li>
-                        <li>
-                            <div>
-                                <span>所在地区</span>
-                                <select class="selectWrap" id="s_province" name="s_province"></select>
-                                <select class="selectWrap" id="s_city" name="s_city"></select>
-                                <select class="selectWrap" id="s_county" name="s_county"></select>
-                            </div>
-                            <div id="show"></div>
-                        </li>
-                        <li>
-                            <span>具体地址</span>
-                            <input class="ipt_kuang" type="text" value="">
-                        </li>
-                        <li>
-                            <span>邮政编码</span>
-                            <input class="ipt_kuang" type="text" value="">
-                        </li>
-                        <li class="bc">
-                            <input class="iptSub" type="submit" value="保存">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+            </li>
+            <div class="clear"></div>
+        </ul>
 
         <!-- 内容区 End -->
 
@@ -286,18 +283,5 @@
 <script type="text/javascript" src="js/form.js"></script>
 <pre class="html" name="code"></pre>
 <script type="text/javascript" src="js/header.js"></script>
-<!-- 省市联动 -->
-<script class="resources library" type="text/javascript" src="js/area.js"></script>
-<script type="text/javascript">
-    var Gid = document.getElementById;
-    var showArea = function () {
-        Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" +
-            Gid('s_city').value + " - 县/区" +
-            Gid('s_county').value + "</h3>"
-    }
-    _init_area();
-    // 有下面这段报错。不知什么原因
-    // Gid('s_county').setAttribute('onchange', 'showArea()');
-</script>
 
 </html>
