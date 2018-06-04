@@ -3358,3 +3358,24 @@ ul.breadcrumb li a {
     font-size: 17px;
     color: #ffffff;
 }
+.yhk{
+    display: inline-block;
+    width: 281px;
+    padding: 12px 17px;
+    border-radius: 5px;
+	border: solid 1px #d5d5d5;
+}
+.yhk_infs{
+    margin-left: 15px;
+}
+.yhk_infs p{
+    margin-top: 2px;
+    font-size: 16px;
+    color: #252525;
+}
+.yhk_infs p span{
+    font-family: "PingFang-SC-Regular";
+    font-size: 14px;
+    color: #2a2a2a;
+    margin-left: 10px;
+}
