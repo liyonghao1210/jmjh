@@ -161,7 +161,10 @@
             <li class="home">
                 <a href="#">首页</a>
             </li>
-            <li>个人中心</li>
+            <li>
+                <a href="#">个人中心</a>
+            </li>
+            <li>我的购买</li>
         </ul>
         <ul class="center_Wrap">
             <li class="left center_left">
@@ -192,66 +195,151 @@
                         <a href="###">我的寄卖</a>
                     </li>
                     <li>
-                        <a href="###">我的购买</a>
+                        <a class="active" href="###">我的购买</a>
                     </li>
                 </ul>
             </li>
             <li class="right center_right">
-                <div class="right_header person_header">
+                <div class="right_header">
+                    <div class="right_headerDiv1 left">
+                        <img class="left" src="images/yspImg.png" width="81" height="81" alt="">
+                        <div class="left userInfWrap">
+                            <p class="useName">上午好，张三！</p>
+                            <a class="modify_inf" href="###">修改个人信息</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
                     <div class="right header_btnGroup">
                         <a class="mySc" href="###">我的收藏</a>
-                        <a class="n_email" href="###">站内信
+                        <a class="n_email" href="###">
+                            站内信
                             <span>10</span>
                         </a>
                     </div>
                     <div class="clear"></div>
                 </div>
-                <div class="person_inf">
-                    <h2>个人资料</h2>
-                    <form action="">
-                        <div class="person_img">
-                            <img id="preview" src="images/listImg.png" width="131" height="131" alt=""><br>
-                            <input class="hide" type="file" id="uploadFile" name="file" onchange="imgPreview(this)" />
-                            <div class="xg_img">修改头像</div>
-                        </div>
-                        <div class="person_iptWrap">
-                            <p>
-                                <span>昵称</span>
-                                <input type="text" value="">
-                            </p>
-                            <div class="person_sex">
-                                <span class="sex">性别</span>
-                                <span class="sex_radio">
-                                    <input type="radio" checked data-title="男" name="a" class="cao-radio">
-                                    <input type="radio" data-title="女" name="a" class="cao-radio">
-                                </span>
+                <div class="my_buyWrap">
+                    <h2>我的购买</h2>
+                    <ul class="jy_history_cont my_buy">
+                        <li class="jy_money">
+                            <div class="left iptWidth">
+                                <span>商品名称</span>
+                                <input class="je_input" type="text" value="">
                             </div>
-                            <p>
-                                <span>手机号码</span>
-                                <input type="text" value="">
-                            </p>
-                            <p>
-                                <span>真实姓名</span>
-                                <input type="text" value="">
-                            </p>
-                            <p>
-                                <span>身份证号码</span>
-                                <input type="text" value="">
-                            </p>
-                            <p>
-                                <span>用户密码</span>
-                                <input type="password" value="">
-                            </p>
-                            <p>
-                                <span>邮箱</span>
-                                <input type="email" value="">
-                            </p>
-                            <div class="person_submit">
-                                <input type="submit" value="保存">
+                            <div class="left iptWidth">
+                                <span>年涨幅</span>
+                                <input class="je_input" type="text" value="">
                             </div>
+                            <div class="left iptWidth">
+                                <span>金额</span>
+                                <input class="je_input" type="text" value="">
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                        <li class="time_choice">
+                            <span>成交日期</span>
+                            <input type="text" class="demo-input" placeholder="日期范围" id="test6">
+                        </li>
+                        <li class="centerBtnGroup">
+                            <input class="search" type="button" value="搜索">
+                            <input class="reset" type="button" value="重置">
+                        </li>
+                    </ul>
+                    <ul class="buy_lists">
+                        <li class="buy_lists_inf">
+                            <img class="left" src="images/listImg.png" width="148" height="111" alt="">
+                            <ul class="left buy_lists_inf_right">
+                                <li>
+                                    <div class="left buy_lists_name">
+                                        <p class="buy_name">青花釉里红堆塑花卉图罐</p>
+                                        <p class="buy_numbers">订单号：123456789</p>
+                                    </div>
+                                    <div class="right buy_lists_name">
+                                        <p class="buy_times">2018-06-01</p>
+                                        <p class="buy_times">交易成功</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                                <li class="buy_lists_ifnLi1">
+                                    <span class="left buy_lists_span1">金额：
+                                        <span>32000
+                                            <span>元</span>
+                                        </span>
+                                    </span>
+                                    <span class="left buy_lists_span1">年涨幅：
+                                        <span>12
+                                            <span>%</span>
+                                        </span>
+                                    </span>
+                                    <span class="left buy_lists_span3">
+                                        <span>类型：
+                                            <span>瓷器</span>
+                                        </span>
+                                    </span>
+                                    <span class="right buy_lists_span4">
+                                        <a href="###">订单详情</a>
+                                        <a href="###">我要寄卖</a>
+                                    </span>
+                                    <div class="clear"></div>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </li>
+                        <li class="buy_lists_inf">
+                            <img class="left" src="images/listImg.png" width="148" height="111" alt="">
+                            <ul class="left buy_lists_inf_right">
+                                <li>
+                                    <div class="left buy_lists_name">
+                                        <p class="buy_name">青花釉里红堆塑花卉图罐</p>
+                                        <p class="buy_numbers">订单号：123456789</p>
+                                    </div>
+                                    <div class="right buy_lists_name">
+                                        <p class="buy_times">2018-06-01</p>
+                                        <p class="buy_times">交易成功</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                                <li class="buy_lists_ifnLi1">
+                                    <span class="left buy_lists_span1">金额：
+                                        <span>32000
+                                            <span>元</span>
+                                        </span>
+                                    </span>
+                                    <span class="left buy_lists_span1">年涨幅：
+                                        <span>12
+                                            <span>%</span>
+                                        </span>
+                                    </span>
+                                    <span class="left buy_lists_span3">
+                                        <span>类型：
+                                            <span>瓷器</span>
+                                        </span>
+                                    </span>
+                                    <span class="right buy_lists_span4">
+                                        <a href="###">订单详情</a>
+                                        <a href="###">我要寄卖</a>
+                                    </span>
+                                    <div class="clear"></div>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </li>
+                    </ul>
+                    <!-- 分页 -->
+                    <div class="pages buy_pages">
+                        <div class="page_normal">
+                            <a href="#" title="上一页" class="page_prev">上一页</a>
+                            <a href="#" title="1" class="page_current">1</a>
+                            <a href="#" title="2">2</a>
+                            <a href="#" title="3">3</a>
+                            <a href="#" title="4">4</a>
+                            <a href="#" title="5">5</a>
+                            <a href="#" title="...">...</a>
+                            <a href="#" title="10">10</a>
+                            <a href="#" class="page_next" title="下一页">下一页</a>
                         </div>
-
-                    </form>
+                    </div>
                 </div>
             </li>
             <div class="clear"></div>
@@ -330,38 +418,15 @@
 <script type="text/javascript" src="js/form.js"></script>
 <pre class="html" name="code"></pre>
 <script type="text/javascript" src="js/header.js"></script>
+<!-- 日期控件 -->
+<script type="text/javascript" src="js/laydate/laydate.js"></script>
 <script>
-    $(function(){
-        //按钮的点击事件
-        $('.xg_img').click(function () {
-            //触发file的点击事件
-            $('#uploadFile').click();
-        });
-    })
-    function imgPreview(fileDom) {
-            //判断是否支持FileReader
-            if (window.FileReader) {
-                var reader = new FileReader();
-            } else {
-                alert("您的设备不支持图片预览功能，如需该功能请升级您的设备！");
-            }
-
-            //获取文件
-            var file = fileDom.files[0];
-            var imageType = /^image\//;
-            //是否是图片
-            if (!imageType.test(file.type)) {
-                alert("请选择图片！");
-                return;
-            }
-            //读取完成
-            reader.onload = function (e) {
-                //获取图片dom
-                var img = document.getElementById("preview");
-                //图片路径设置为读取的图片
-                img.src = e.target.result;
-            };
-            reader.readAsDataURL(file);
-        }
+    lay('#version').html('-v' + laydate.v);
+    //日期范围
+    laydate.render({
+        elem: '#test6',
+        range: true
+    });
 </script>
+
 </html>

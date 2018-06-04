@@ -161,101 +161,114 @@
             <li class="home">
                 <a href="#">首页</a>
             </li>
-            <li>个人中心</li>
-        </ul>
-        <ul class="center_Wrap">
-            <li class="left center_left">
-                <ul>
-                    <li class="center_title1 center_title">个人信息</li>
-                    <li>
-                        <a href="###">银行卡管理</a>
-                    </li>
-                    <li>
-                        <a href="###">收货地址管理</a>
-                    </li>
-                    <li>
-                        <a href="###">账号安全</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="center_title2 center_title">资金明细</li>
-                    <li>
-                        <a href="###">资金管理</a>
-                    </li>
-                    <li>
-                        <a href="###">交易记录</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="center_title3 center_title">订单管理</li>
-                    <li>
-                        <a href="###">我的寄卖</a>
-                    </li>
-                    <li>
-                        <a href="###">我的购买</a>
-                    </li>
-                </ul>
+            <li>
+                <a href="#">个人中心</a>
             </li>
-            <li class="right center_right">
-                <div class="right_header person_header">
-                    <div class="right header_btnGroup">
-                        <a class="mySc" href="###">我的收藏</a>
-                        <a class="n_email" href="###">站内信
-                            <span>10</span>
-                        </a>
-                    </div>
+            <li>
+                <a href="#">我的购买</a>
+            </li>
+            <li>
+                详情
+            </li>
+        </ul>
+        <div class="myBuyDetWrap">
+            <div class="go_back_wrap">
+                <p class="left">订单号：L123456789</p>
+                <a class="right" href="#">返回</a>
+                <div class="clear"></div>
+            </div>
+            <div class="buy_success">
+                <img src="images/success.png" width="37" height="37" alt="">
+                <span>订单状态：交易成功</span>
+            </div>
+            <div class="orderName">
+                <h2>订单信息</h2>
+                <ul class="order_table">
+                    <li class="left">
+                        <h3>寄存信息</h3>
+                        <div class="jc_infs">
+                            <span>寄存仓库：</span>
+                            <span>大连仓库xx号</span>
+                        </div>
+                        <div class="jc_infs">
+                            <span>仓库地址：</span>
+                            <span>大连金州区XX路1号大连仓库</span>
+                        </div>
+                        <div class="jc_infs">
+                            <span>寄存时间：</span>
+                            <span>2018-03-29至2019-03-28</span>
+                        </div>
+                    </li>
+                    <li class="left">
+                        <h3>付款信息</h3>
+                        <div class="jc_infs">
+                            <span>付款账号：</span>
+                            <span>**** ***** *** 1234</span>
+                        </div>
+                        <div class="jc_infs">
+                            <span>付款金额：</span>
+                            <span>￥32000.00</span>
+                        </div>
+                        <div class="jc_infs">
+                            <span>付款时间：</span>
+                            <span>2018-03-29 15:30</span>
+                        </div>
+                    </li>
                     <div class="clear"></div>
+                </ul>
+                <div class="ysptableWrap buy_myList">
+                    <table class="tableList" border="0" cellspacing="" cellpadding="">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>艺术品名称</th>
+                                <th>艺术品编号</th>
+                                <th>订单编号</th>
+                                <th>当前持有人</th>
+                                <th>售价</th>
+                                <th>年涨幅</th>
+                                <th>持有效期</th>
+                                <th>状态</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="images/yspImg1.png" width="107" height="79" alt="">
+                                </td>
+                                <td>青花釉里红堆塑花卉图罐</td>
+                                <td>4564641112</td>
+                                <td>L123456789</td>
+                                <td>张三</td>
+                                <td class="tableTdMoney">￥32000.00</td>
+                                <td>12.00%</td>
+                                <td>12个月</td>
+                                <td>交易成功</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="person_inf">
-                    <h2>个人资料</h2>
-                    <form action="">
-                        <div class="person_img">
-                            <img id="preview" src="images/listImg.png" width="131" height="131" alt=""><br>
-                            <input class="hide" type="file" id="uploadFile" name="file" onchange="imgPreview(this)" />
-                            <div class="xg_img">修改头像</div>
-                        </div>
-                        <div class="person_iptWrap">
-                            <p>
-                                <span>昵称</span>
-                                <input type="text" value="">
-                            </p>
-                            <div class="person_sex">
-                                <span class="sex">性别</span>
-                                <span class="sex_radio">
-                                    <input type="radio" checked data-title="男" name="a" class="cao-radio">
-                                    <input type="radio" data-title="女" name="a" class="cao-radio">
-                                </span>
-                            </div>
-                            <p>
-                                <span>手机号码</span>
-                                <input type="text" value="">
-                            </p>
-                            <p>
-                                <span>真实姓名</span>
-                                <input type="text" value="">
-                            </p>
-                            <p>
-                                <span>身份证号码</span>
-                                <input type="text" value="">
-                            </p>
-                            <p>
-                                <span>用户密码</span>
-                                <input type="password" value="">
-                            </p>
-                            <p>
-                                <span>邮箱</span>
-                                <input type="email" value="">
-                            </p>
-                            <div class="person_submit">
-                                <input type="submit" value="保存">
-                            </div>
-                        </div>
-
-                    </form>
+                <div class="down_infs">
+                    <div class="down_infs_pWrap">
+                        <p>
+                            <span class="infsSpan1">本金：</span>
+                            <span class="infsSpan2">￥200000.00</span>
+                        </p>
+                        <p>
+                            <span class="infsSpan1">利息：</span>
+                            <span class="infsSpan2">￥100.00</span>
+                        </p>
+                        <p>
+                            <span class="infsSpan1">付款：</span>
+                            <span class=" infsSpan2">
+                                <span>￥</span>
+                                <span>200040.00</span>
+                            </span>
+                        </p>
+                    </div>
                 </div>
-            </li>
-            <div class="clear"></div>
-        </ul>
+            </div>
+        </div>
 
         <!-- 内容区 End -->
 
@@ -330,38 +343,5 @@
 <script type="text/javascript" src="js/form.js"></script>
 <pre class="html" name="code"></pre>
 <script type="text/javascript" src="js/header.js"></script>
-<script>
-    $(function(){
-        //按钮的点击事件
-        $('.xg_img').click(function () {
-            //触发file的点击事件
-            $('#uploadFile').click();
-        });
-    })
-    function imgPreview(fileDom) {
-            //判断是否支持FileReader
-            if (window.FileReader) {
-                var reader = new FileReader();
-            } else {
-                alert("您的设备不支持图片预览功能，如需该功能请升级您的设备！");
-            }
 
-            //获取文件
-            var file = fileDom.files[0];
-            var imageType = /^image\//;
-            //是否是图片
-            if (!imageType.test(file.type)) {
-                alert("请选择图片！");
-                return;
-            }
-            //读取完成
-            reader.onload = function (e) {
-                //获取图片dom
-                var img = document.getElementById("preview");
-                //图片路径设置为读取的图片
-                img.src = e.target.result;
-            };
-            reader.readAsDataURL(file);
-        }
-</script>
 </html>

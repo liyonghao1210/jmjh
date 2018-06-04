@@ -180,7 +180,7 @@
                 <ul>
                     <li class="center_title2 center_title">资金明细</li>
                     <li>
-                        <a href="###">资金管理</a>
+                        <a class="active" href="###">资金管理</a>
                     </li>
                     <li>
                         <a href="###">交易记录</a>
@@ -197,61 +197,67 @@
                 </ul>
             </li>
             <li class="right center_right">
-                <div class="right_header person_header">
+                <div class="right_header">
+                    <div class="right_headerDiv1 left">
+                        <img class="left" src="images/yspImg.png" width="81" height="81" alt="">
+                        <div class="left userInfWrap">
+                            <p class="useName">上午好，张三！</p>
+                            <a class="modify_inf" href="###">修改个人信息</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
                     <div class="right header_btnGroup">
                         <a class="mySc" href="###">我的收藏</a>
-                        <a class="n_email" href="###">站内信
+                        <a class="n_email" href="###">
+                            站内信
                             <span>10</span>
                         </a>
                     </div>
                     <div class="clear"></div>
                 </div>
-                <div class="person_inf">
-                    <h2>个人资料</h2>
-                    <form action="">
-                        <div class="person_img">
-                            <img id="preview" src="images/listImg.png" width="131" height="131" alt=""><br>
-                            <input class="hide" type="file" id="uploadFile" name="file" onchange="imgPreview(this)" />
-                            <div class="xg_img">修改头像</div>
-                        </div>
-                        <div class="person_iptWrap">
+                <div class="tixianWrap">
+                    <h2>提现信息</h2>
+                    <div class="tx_money">
+                        <span class="tx_money_name">可提现金额</span>
+                        <span class="tx_money_nub">1200.00元</span>
+                    </div>
+                    <div class="tx_moneyTot">
+                        <span class="tx_money_name">提现金额</span>
+                        <span>
+                            <input class="tx_ipt" type="text" value="">
                             <p>
-                                <span>昵称</span>
-                                <input type="text" value="">
+                                <span class="left">免手续费，预计1个工作日到账</span>
+                                <a class="right" href="###">全部提现</a>
+                                <div class="clear"></div>
                             </p>
-                            <div class="person_sex">
-                                <span class="sex">性别</span>
-                                <span class="sex_radio">
-                                    <input type="radio" checked data-title="男" name="a" class="cao-radio">
-                                    <input type="radio" data-title="女" name="a" class="cao-radio">
-                                </span>
-                            </div>
-                            <p>
-                                <span>手机号码</span>
-                                <input type="text" value="">
-                            </p>
-                            <p>
-                                <span>真实姓名</span>
-                                <input type="text" value="">
-                            </p>
-                            <p>
-                                <span>身份证号码</span>
-                                <input type="text" value="">
-                            </p>
-                            <p>
-                                <span>用户密码</span>
-                                <input type="password" value="">
-                            </p>
-                            <p>
-                                <span>邮箱</span>
-                                <input type="email" value="">
-                            </p>
-                            <div class="person_submit">
-                                <input type="submit" value="保存">
-                            </div>
-                        </div>
-
-                    </form>
+                        </span>
+                    </div>
+                    <div class="tx_yhk">
+                        <span class="tx_money_name">提现至以下银行卡</span>
+                    </div>
+                    <div class="tx_moneyTot">
+                        <span class="tx_money_name">输入密码</span>
+                        <span>
+                            <input class="tx_ipt" type="password" value="">
+                        </span>
+                    </div>
+                    <div class="tx_moneyTot">
+                        <span class="tx_money_name">手机号码</span>
+                        <span>
+                            <input class="tx_ipt" type="text" value="">
+                        </span>
+                    </div>
+                    <div class="tx_moneyTot">
+                        <span class="tx_money_name">手机验证码</span>
+                        <span>
+                            <input class="tx_ipt tel_yzm_ipt" type="text" value="">
+                            <span class="yzm-time" id="btn_yzm">获取验证码</span>
+                        </span>
+                    </div>
+                    <div class="sure_sub">
+                        <input type="submit" value="确认提交">
+                    </div>
                 </div>
             </li>
             <div class="clear"></div>
@@ -330,38 +336,27 @@
 <script type="text/javascript" src="js/form.js"></script>
 <pre class="html" name="code"></pre>
 <script type="text/javascript" src="js/header.js"></script>
-<script>
-    $(function(){
-        //按钮的点击事件
-        $('.xg_img').click(function () {
-            //触发file的点击事件
-            $('#uploadFile').click();
-        });
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+        //获取短信验证码
+        var validCode = true;
+        $("#btn_yzm").click(function () {
+            var time = 60;
+            var $code = $(this);
+            if (validCode) {
+                validCode = false;
+                var t = setInterval(function () {
+                    time--;
+                    $code.html(time + "秒");
+                    if (time == 0) {
+                        clearInterval(t);
+                        $code.html("重新获取");
+                        validCode = true;
+                    }
+                }, 1000)
+            }
+        })
     })
-    function imgPreview(fileDom) {
-            //判断是否支持FileReader
-            if (window.FileReader) {
-                var reader = new FileReader();
-            } else {
-                alert("您的设备不支持图片预览功能，如需该功能请升级您的设备！");
-            }
-
-            //获取文件
-            var file = fileDom.files[0];
-            var imageType = /^image\//;
-            //是否是图片
-            if (!imageType.test(file.type)) {
-                alert("请选择图片！");
-                return;
-            }
-            //读取完成
-            reader.onload = function (e) {
-                //获取图片dom
-                var img = document.getElementById("preview");
-                //图片路径设置为读取的图片
-                img.src = e.target.result;
-            };
-            reader.readAsDataURL(file);
-        }
 </script>
+
 </html>
