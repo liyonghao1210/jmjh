@@ -237,7 +237,7 @@
                     <ul class="saveTable">
                         <li>
                             <div class="a">
-                                <div class="left rzContent">
+                                <div class="left rzContent rzContent1">
                                     <p class="trueName">实名认证</p>
                                     <p class="trueInf">已认证</p>
                                 </div>
@@ -255,13 +255,16 @@
                                     <label for="sz2">证件号码</label>
                                     <input id="sz2" type="text" value="">
                                 </div>
+                                <div class="save_submit">
+                                    <input type="submit" value="确定">
+                                </div>
                             </div>
                         </li>
                         <li class="a">
                             <div>
-                                <div class="left rzContent">
-                                    <p class="trueName">实名认证</p>
-                                    <p class="trueInf">已认证</p>
+                                <div class="left rzContent rzContent2">
+                                    <p class="trueName">手机绑定</p>
+                                    <p class="trueInf">138****1234</p>
                                 </div>
                                 <div class="right rz_btn">
                                     <a href="javascript:;">设置</a>
@@ -281,9 +284,9 @@
                         </li>
                         <li class="a">
                             <div>
-                                <div class="left rzContent">
-                                    <p class="trueName">实名认证</p>
-                                    <p class="trueInf">已认证</p>
+                                <div class="left rzContent rzContent3">
+                                    <p class="trueName">邮箱绑定</p>
+                                    <p class="trueInf">123456789@qq.com</p>
                                 </div>
                                 <div class="right rz_btn">
                                     <a href="javascript:;">设置</a>
@@ -299,13 +302,16 @@
                                     <label for="sz6">证件号码</label>
                                     <input id="sz6" type="text" value="">
                                 </div>
+                                <div class="save_submit">
+                                    <input type="submit" value="确定">
+                                </div>
                             </div>
                         </li>
                         <li class="a">
                             <div>
-                                <div class="left rzContent">
-                                    <p class="trueName">实名认证</p>
-                                    <p class="trueInf">已认证</p>
+                                <div class="left rzContent rzContent4">
+                                    <p class="trueName">银行卡绑定</p>
+                                    <p class="trueInf">6288 **** **** 1234</p>
                                 </div>
                                 <div class="right rz_btn">
                                     <a href="javascript:;">设置</a>
@@ -325,9 +331,9 @@
                         </li>
                         <li class="a">
                             <div>
-                                <div class="left rzContent">
-                                    <p class="trueName">实名认证</p>
-                                    <p class="trueInf">已认证</p>
+                                <div class="left rzContent rzContent5">
+                                    <p class="trueName">登录密码</p>
+                                    <p class="trueInf">已设定</p>
                                 </div>
                                 <div class="right rz_btn">
                                     <a href="javascript:;">设置</a>
@@ -347,9 +353,9 @@
                         </li>
                         <li class="a">
                             <div>
-                                <div class="left rzContent">
-                                    <p class="trueName">实名认证</p>
-                                    <p class="trueInf">已认证</p>
+                                <div class="left rzContent rzContent6">
+                                    <p class="trueName">支付密码</p>
+                                    <p class="trueInf">未设定</p>
                                 </div>
                                 <div class="right rz_btn">
                                     <a href="javascript:;">设置</a>
@@ -369,9 +375,9 @@
                         </li>
                         <li class="a">
                             <div>
-                                <div class="left rzContent">
-                                    <p class="trueName">实名认证</p>
-                                    <p class="trueInf">已认证</p>
+                                <div class="left rzContent rzContent7">
+                                    <p class="trueName">三方账户开户</p>
+                                    <p class="trueInf">未设定</p>
                                 </div>
                                 <div class="right rz_btn">
                                     <a href="javascript:;">设置</a>
@@ -470,15 +476,20 @@
 <script type="text/javascript" src="js/header.js"></script>
 <script type="text/javascript">
     $(".rz_btn a").click(function (event) {
-
         var dd = $(this).parent().parent().next('.yc_content');
-
         var display = dd.css('display');
         if (display == 'none') {
-            $(".saveTable li .yc_content").slideUp('slow').eq($(".saveTable a").index(this)).slideDown('slow');;
+            $(".saveTable li .yc_content").slideUp('slow').eq($(".saveTable a").index(this)).slideDown('slow');
+            $(this).html("取消");
         } else {
             dd.slideUp('slow');
+            $(this).html("设置");
         }
+    })
+    $(".save_submit input").click(function () {
+        var bb = $(".rz_btn a").parent().parent().next('.yc_content');
+        bb.slideUp('slow');
+        $(".rz_btn a").html("设置");
     })
 </script>
 

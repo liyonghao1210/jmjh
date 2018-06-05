@@ -2431,8 +2431,7 @@ ul.breadcrumb li a {
     background: url(../images/sc.png) no-repeat 15px center;
 }
 
-.znx_active a
-.mySc {
+.znx_active a .mySc {
     margin-right: 10px;
     background: url(../images/sc.png) no-repeat 15px center;
 }
@@ -2450,11 +2449,13 @@ ul.breadcrumb li a {
     background: url(../images/email.png) no-repeat 11px center;
     padding-right: 26px;
 }
+
 .header_btnGroup .znx_email_active {
     background: url(../images/active_email.png) no-repeat 11px center;
     border: solid 1px #e13934;
     color: #e13934;
 }
+
 .n_email span {
     position: absolute;
     top: 3px;
@@ -3477,7 +3478,7 @@ ul.breadcrumb li a {
     text-align: center;
 }
 
-.my_card_bd a{
+.my_card_bd a {
     display: inline-block;
     width: 164px;
     height: 34px;
@@ -3489,30 +3490,37 @@ ul.breadcrumb li a {
     font-size: 15px;
     color: #fff;
 }
-.tx_tips{
+
+.tx_tips {
     margin-left: 259px;
     margin-top: 30px;
 }
-.tx_tips h5{
+
+.tx_tips h5 {
     font-size: 14px;
     color: #e13934;
     margin-bottom: 19px;
 }
-.tx_tips p{
+
+.tx_tips p {
     width: 607px;
     font-size: 13px;
     line-height: 25px;
     color: #898989;
 }
-.my_xx{
+
+.my_xx {
     font-size: 17px;
     color: #272727;
     padding: 34px 0 44px 40px;
 }
-#znx_tab{
+
+#znx_tab {
     padding: 0 40px;
 }
+
 /* 全选反选 */
+
 .checkBox,
 .checkBox1 {
     display: inline-block;
@@ -3523,41 +3531,49 @@ ul.breadcrumb li a {
     margin-right: 11px;
     cursor: pointer;
 }
-.tab_lists{
+
+.tab_lists {
     margin-top: 36px;
     padding-bottom: 23px;
     border-bottom: 1px solid #e3e3e3;
 }
-.tab_list_mid{
+
+.tab_list_mid {
     margin-left: 23px;
 }
-.tab_list_mid p{
+
+.tab_list_mid p {
     line-height: 23px;
 }
-.tab_list_mid p:first-child{
+
+.tab_list_mid p:first-child {
     font-size: 15px;
     color: #353535;
 }
+
 .tab_list_mid p:last-child {
     font-size: 13px;
     color: #828282;
 }
-.tab_list_right a{
+
+.tab_list_right a {
     font-size: 15px;
     line-height: 46px;
     color: #e13934;
     text-decoration: underline;
 }
 
-
 /* 复选框 */
+
 /*隐藏选项框*/
 
 .tab_list_left input[type='checkbox'] {
     visibility: hidden;
     cursor: pointer;
 }
+
 /*设置label样式*/
+
 .tab_list_left input[type='checkbox']+label {
     display: inline-block;
     vertical-align: top;
@@ -3571,74 +3587,118 @@ ul.breadcrumb li a {
     -webkit-transition: background 0.3s linear;
     -webkit-box-sizing: border-box;
 }
+
 /*相邻选择器来模拟选项被选择的效果*/
+
 .tab_list_left input[type='checkbox']:checked+label {
     background-image: url("../images/check_16px.png");
     background-size: 100% 100%;
 }
 
 /* 账号安全 */
-.saveWrap{
+
+.saveWrap {
     padding: 31px 22px 0 22px;
 }
-.saveWrap h2{
+
+.saveWrap h2 {
     font-size: 18px;
     color: #272727;
     text-align: center;
     font-weight: 600;
     margin-bottom: 22px;
 }
-.zc_inf{
+
+.zc_inf {
     width: 100%;
     margin-bottom: 33px;
 }
-.zc_time{
+
+.zc_time {
     width: 25%;
 }
-.zc_time .p1{
+
+.zc_time .p1 {
     font-size: 18px;
     color: #272727;
     font-weight: 600;
     margin-bottom: 15px;
 }
-.zc_time .p2{
+
+.zc_time .p2 {
     font-size: 14px;
     color: #898989;
 }
-.save_jd{
+
+.save_jd {
     line-height: 58px;
 }
-.saveTable{
+
+.saveTable {
     width: 100%;
     border: 1px solid #e3e3e3;
 }
-.saveTable li{
+
+.saveTable li {
     border-bottom: 1px solid #e3e3e3;
     padding-bottom: 27px;
     min-width: 98px;
 }
-.saveTable li:last-child{
+
+.saveTable li:last-child {
     border-bottom: 0;
 }
-.rzContent{
+
+.rzContent {
     margin-left: 39px;
     padding-top: 27px;
     padding-left: 42px;
+}
+
+.rzContent1 {
     background: url(../images/rz.png) no-repeat left 27px;
 }
-.trueName{
+
+.rzContent2 {
+    background: url(../images/save_tel.png) no-repeat left 27px;
+}
+
+.rzContent3 {
+    background: url(../images/save_email.png) no-repeat left 27px;
+}
+
+.rzContent4 {
+    background: url(../images/xykSave.png) no-repeat left 27px;
+}
+
+.rzContent5 {
+    background: url(../images/psdSave.png) no-repeat left 27px;
+}
+
+.rzContent6 {
+    background: url(../images/psdSave.png) no-repeat left 27px;
+}
+
+.rzContent7 {
+    background: url(../images/xykSave.png) no-repeat left 27px;
+}
+
+.trueName {
     margin-bottom: 12px;
     font-size: 15px;
     color: #424242;
 }
-.trueInf{
+
+.trueInf {
     font-size: 15px;
     color: #e13934;
 }
-.rz_btn{
+
+.rz_btn {
     padding: 35px 32px 0 0;
 }
-.rz_btn a{
+
+.rz_btn a {
     display: inline-block;
     width: 84px;
     height: 34px;
@@ -3650,22 +3710,41 @@ ul.breadcrumb li a {
     color: #fff;
     font-size: 15px;
 }
-.yc_content{
+
+.yc_content {
     margin-top: 50px;
     text-align: center;
     display: none;
 }
-.yc_content lable{
+
+.yc_content lable {
     font-size: 15px;
     color: #424242;
 }
-.yc_content input{
+
+.yc_content input {
     width: 260px;
     height: 37px;
     border: 1px solid #d5d5d5;
     padding: 0 10px;
     margin-left: 18px;
 }
-.underDiv{
+
+.underDiv {
     margin-top: 22px;
+}
+
+.save_submit {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.save_submit input {
+    width: 132px;
+    height: 34px;
+    background-color: #e13934;
+    border-radius: 5px;
+    border: solid 1px #e13934;
+    color: #fff;
+    font-size: 15px;
 }
