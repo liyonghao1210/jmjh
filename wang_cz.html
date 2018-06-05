@@ -217,24 +217,23 @@
                     <div class="clear"></div>
                 </div>
                 <div class="tixianWrap">
-                    <h2>提现信息</h2>
+                    <h2>我要充值</h2>
                     <div class="tx_money">
-                        <span class="tx_money_name">可提现金额</span>
+                        <span class="tx_money_name">账户金额</span>
                         <span class="tx_money_nub">1200.00元</span>
                     </div>
                     <div class="tx_moneyTot">
-                        <span class="tx_money_name">提现金额</span>
+                        <span class="tx_money_name">充值金额</span>
                         <span>
                             <input class="tx_ipt" type="text" value="">
                             <p>
-                                <span class="left">免手续费，预计1个工作日到账</span>
-                                <a class="right" href="###">全部提现</a>
+                                <span class="left">免手续费，预计1-2个工作日到账</span>
                                 <div class="clear"></div>
                             </p>
                         </span>
                     </div>
                     <div class="tx_yhk">
-                        <span class="left tx_money_name">提现至以下银行卡</span>
+                        <span class="left tx_money_name">支付方式</span>
                         <span class="left yhk_wrap">
                             <span class="left yhk yhk_active">
                                 <img class="left" src="images/yh.png" width="46" height="46" alt="">
@@ -291,22 +290,15 @@
                             <input class="tx_ipt" type="text" value="">
                         </span>
                     </div>
-                    <div class="tx_moneyTot">
-                        <span class="tx_money_name">手机验证码</span>
-                        <span>
-                            <input class="tx_ipt tel_yzm_ipt" type="text" value="">
-                            <span class="yzm-time" id="btn_yzm">获取验证码</span>
-                        </span>
-                    </div>
+
                     <div class="sure_sub">
-                        <input type="submit" value="确认提交">
+                        <input type="submit" value="确认充值">
                     </div>
                     <div class="tx_tips">
                         <h5>温馨提示</h5>
-                        <p>1. 提现费用：每笔2元。</p>
-                        <p>2. 15:00之前的提现申请，预计到账时间为T+1日，15:00之后处理的提现申请，预计到账时间T+2日；</p>
-                        <p>3. 周末、节假日提现正常处理；</p>
-                        <p>4. 单笔限额: 5万元 每日限提: 10次</p>
+                        <p>1. 为保障用户收益，充值所需费用将由平台垫付。</p>
+                        <p>2. 为保证资金安全，您的资金将由新浪支付进行第三方托管</p>
+                        <p>3. 每日的充值限额依据各银行限额为准</p>
                     </div>
                 </div>
             </li>
@@ -387,26 +379,6 @@
 <pre class="html" name="code"></pre>
 <script type="text/javascript" src="js/header.js"></script>
 <script type="text/javascript" charset="utf-8">
-    $(function () {
-        //获取短信验证码
-        var validCode = true;
-        $("#btn_yzm").click(function () {
-            var time = 60;
-            var $code = $(this);
-            if (validCode) {
-                validCode = false;
-                var t = setInterval(function () {
-                    time--;
-                    $code.html(time + "秒");
-                    if (time == 0) {
-                        clearInterval(t);
-                        $code.html("重新获取");
-                        validCode = true;
-                    }
-                }, 1000)
-            }
-        })
-    })
     // 银行卡切换
     $(".yhk").click(function () {
         $(this).addClass("yhk_active").siblings().removeClass("yhk_active");

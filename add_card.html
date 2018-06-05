@@ -168,7 +168,7 @@
                 <ul>
                     <li class="center_title1 center_title">个人信息</li>
                     <li>
-                        <a href="###">银行卡管理</a>
+                        <a class="active" href="###">银行卡管理</a>
                     </li>
                     <li>
                         <a href="###">收货地址管理</a>
@@ -180,7 +180,7 @@
                 <ul>
                     <li class="center_title2 center_title">资金明细</li>
                     <li>
-                        <a class="active" href="###">资金管理</a>
+                        <a href="###">资金管理</a>
                     </li>
                     <li>
                         <a href="###">交易记录</a>
@@ -216,97 +216,21 @@
                     </div>
                     <div class="clear"></div>
                 </div>
-                <div class="tixianWrap">
-                    <h2>提现信息</h2>
-                    <div class="tx_money">
-                        <span class="tx_money_name">可提现金额</span>
-                        <span class="tx_money_nub">1200.00元</span>
-                    </div>
-                    <div class="tx_moneyTot">
-                        <span class="tx_money_name">提现金额</span>
-                        <span>
-                            <input class="tx_ipt" type="text" value="">
-                            <p>
-                                <span class="left">免手续费，预计1个工作日到账</span>
-                                <a class="right" href="###">全部提现</a>
-                                <div class="clear"></div>
-                            </p>
-                        </span>
-                    </div>
-                    <div class="tx_yhk">
-                        <span class="left tx_money_name">提现至以下银行卡</span>
-                        <span class="left yhk_wrap">
-                            <span class="left yhk yhk_active">
-                                <img class="left" src="images/yh.png" width="46" height="46" alt="">
-                                <div class="left yhk_infs">
-                                    <p>招商银行
-                                        <span>储蓄卡</span>
-                                    </p>
-                                    <p>**** **** **** 3248</p>
-                                </div>
-                                <div class="clear"></div>
-                            </span>
-                            <span class="left yhk">
-                                <img class="left" src="images/yh.png" width="46" height="46" alt="">
-                                <div class="left yhk_infs">
-                                    <p>招商银行
-                                        <span>储蓄卡</span>
-                                    </p>
-                                    <p>**** **** **** 3248</p>
-                                </div>
-                                <div class="clear"></div>
-                            </span>
-                            <span class="left yhk">
-                                <img class="left" src="images/yh.png" width="46" height="46" alt="">
-                                <div class="left yhk_infs">
-                                    <p>招商银行
-                                        <span>储蓄卡</span>
-                                    </p>
-                                    <p>**** **** **** 3248</p>
-                                </div>
-                                <div class="clear"></div>
-                            </span>
-                            <span class="left yhk">
-                                <img class="left" src="images/yh.png" width="46" height="46" alt="">
-                                <div class="left yhk_infs">
-                                    <p>招商银行
-                                        <span>储蓄卡</span>
-                                    </p>
-                                    <p>**** **** **** 3248</p>
-                                </div>
-                                <div class="clear"></div>
-                            </span>
-                        </span>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="tx_moneyTot">
-                        <span class="tx_money_name">输入密码</span>
-                        <span>
-                            <input class="tx_ipt" type="password" value="">
-                        </span>
-                    </div>
-                    <div class="tx_moneyTot">
-                        <span class="tx_money_name">手机号码</span>
-                        <span>
-                            <input class="tx_ipt" type="text" value="">
-                        </span>
-                    </div>
-                    <div class="tx_moneyTot">
-                        <span class="tx_money_name">手机验证码</span>
-                        <span>
-                            <input class="tx_ipt tel_yzm_ipt" type="text" value="">
-                            <span class="yzm-time" id="btn_yzm">获取验证码</span>
-                        </span>
-                    </div>
-                    <div class="sure_sub">
-                        <input type="submit" value="确认提交">
-                    </div>
-                    <div class="tx_tips">
-                        <h5>温馨提示</h5>
-                        <p>1. 提现费用：每笔2元。</p>
-                        <p>2. 15:00之前的提现申请，预计到账时间为T+1日，15:00之后处理的提现申请，预计到账时间T+2日；</p>
-                        <p>3. 周末、节假日提现正常处理；</p>
-                        <p>4. 单笔限额: 5万元 每日限提: 10次</p>
+                <div class="add_card">
+                    <h2>我的银行卡</h2>
+                    <ul class="add_btn">
+                        <li>
+                            <a href="###">
+                                <img src="images/add_card.png" width="62" height="62" alt="">
+                            </a>
+                        </li>
+                        <li>新增银行卡</li>
+                    </ul>
+                    <div class="wenxin_tips">
+                        <h4>温馨提示：</h4>
+                        <p>1、银行卡的开户名必须与实名登记的姓名一致； </p>
+                        <p>2、为了您的资金安全，仅限绑定一张银行卡；仅支持储蓄卡，不可用信用卡；</p>
+                        <p>3、安稳投、存续牛、月续牛正在逐步迁移到存管</p>
                     </div>
                 </div>
             </li>
@@ -386,31 +310,6 @@
 <script type="text/javascript" src="js/form.js"></script>
 <pre class="html" name="code"></pre>
 <script type="text/javascript" src="js/header.js"></script>
-<script type="text/javascript" charset="utf-8">
-    $(function () {
-        //获取短信验证码
-        var validCode = true;
-        $("#btn_yzm").click(function () {
-            var time = 60;
-            var $code = $(this);
-            if (validCode) {
-                validCode = false;
-                var t = setInterval(function () {
-                    time--;
-                    $code.html(time + "秒");
-                    if (time == 0) {
-                        clearInterval(t);
-                        $code.html("重新获取");
-                        validCode = true;
-                    }
-                }, 1000)
-            }
-        })
-    })
-    // 银行卡切换
-    $(".yhk").click(function () {
-        $(this).addClass("yhk_active").siblings().removeClass("yhk_active");
-    })
-</script>
+
 
 </html>

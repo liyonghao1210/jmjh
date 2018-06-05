@@ -534,6 +534,7 @@
 <script type="text/javascript" src="js/header.js"></script>
 <script type="text/javascript" src="js/select1.js"></script>
 <script type="text/javascript" src="js/laydate/laydate.js"></script>
+<script type="text/javascript" src="js/tab.js"></script>
 <script>
     lay('#version').html('-v' + laydate.v);
     //日期范围
@@ -542,21 +543,6 @@
         range: true
     });
 </script>
-<script type="text/javascript">
-    var currentIndex = 0;
-    $(document).ready(function () {
-        $(".list-tab-head ul li").click(function () {
-            var index = $(this).index();
-            if (currentIndex != index) {
-                currentIndex = index;
-                $(this).removeClass("list-normal-li").addClass("list-selected-li");
-                $(this).siblings().removeClass("list-selected-li").addClass("list-normal-li");
-                var contents = $(".list-tab-content").find("li");
-                $(contents[index]).show();
-                $(contents[index]).siblings().hide();
-            }
-        });
-    });
-</script>
+
 
 </html>

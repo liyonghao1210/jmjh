@@ -2428,8 +2428,10 @@ ul.breadcrumb li a {
     padding: 8px 16px 8px 37px;
     border-radius: 8px;
     border: solid 1px #d5d5d5;
+    background: url(../images/sc.png) no-repeat 15px center;
 }
 
+.znx_active a
 .mySc {
     margin-right: 10px;
     background: url(../images/sc.png) no-repeat 15px center;
@@ -2448,7 +2450,11 @@ ul.breadcrumb li a {
     background: url(../images/email.png) no-repeat 11px center;
     padding-right: 26px;
 }
-
+.header_btnGroup .znx_email_active {
+    background: url(../images/active_email.png) no-repeat 11px center;
+    border: solid 1px #e13934;
+    color: #e13934;
+}
 .n_email span {
     position: absolute;
     top: 3px;
@@ -3302,7 +3308,7 @@ ul.breadcrumb li a {
 
 .tx_ipt {
     width: 295px;
-    height: 37px;
+    height: 32px;
     font-size: 14px;
     border: 1px solid #d5d5d5;
     padding: 0 10px;
@@ -3327,8 +3333,20 @@ ul.breadcrumb li a {
     color: #e13934;
 }
 
+.yhk_wrap {
+    width: 500px;
+}
+
 .tx_yhk {
     margin-top: 42px;
+}
+
+.tx_yhk .yhk {
+    margin-bottom: 15px;
+}
+
+.yhk_wrap .yhk:last-child {
+    margin-bottom: 0;
 }
 
 .tel_yzm_ipt {
@@ -3338,8 +3356,8 @@ ul.breadcrumb li a {
 #btn_yzm {
     display: inline-block;
     width: 110px;
-    height: 37px;
-    line-height: 37px;
+    height: 32px;
+    line-height: 32px;
     cursor: pointer;
 }
 
@@ -3358,24 +3376,296 @@ ul.breadcrumb li a {
     font-size: 17px;
     color: #ffffff;
 }
-.yhk{
+
+.yhk {
     display: inline-block;
     width: 281px;
     padding: 12px 17px;
     border-radius: 5px;
-	border: solid 1px #d5d5d5;
+    border: solid 1px #d5d5d5;
+    cursor: pointer;
 }
-.yhk_infs{
+
+.yhk_active {
+    background: url(../images/icon_rightUp.png) no-repeat right top;
+}
+
+.yhk_infs {
     margin-left: 15px;
 }
-.yhk_infs p{
+
+.yhk_infs p {
     margin-top: 2px;
     font-size: 16px;
     color: #252525;
 }
-.yhk_infs p span{
+
+.yhk_infs p span {
     font-family: "PingFang-SC-Regular";
     font-size: 14px;
     color: #2a2a2a;
     margin-left: 10px;
+}
+
+.add_card h2 {
+    font-size: 18px;
+    color: #272727;
+    font-weight: 600;
+    margin-top: 28px;
+    text-align: center;
+}
+
+.add_btn {
+    margin: 0 auto;
+    margin-top: 78px;
+    width: 327px;
+    height: 126px;
+    border-radius: 8px;
+    border: 1px solid #e3e3e3;
+    text-align: center;
+}
+
+.add_btn a img {
+    margin-top: 19px;
+}
+
+.add_btn li:last-child {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #e13934;
+    margin-top: 16px;
+}
+
+.wenxin_tips {
+    margin-top: 88px;
+    margin-left: 78px;
+}
+
+.wenxin_tips h4 {
+    font-size: 14px;
+    color: #e13934;
+    margin-bottom: 35px;
+}
+
+.wenxin_tips p {
+    line-height: 29px;
+    letter-spacing: 1px;
+    color: #7a7a7a;
+    font-size: 14px;
+}
+
+.person_card {
+    font-size: 15px;
+    color: #090909;
+}
+
+.kh_yh {
+    margin-top: 20px;
+}
+
+.my_card_box {
+    margin-left: 0;
+    width: 314px;
+}
+
+.my_card_xy {
+    margin-left: 341px;
+    margin-top: 20px;
+}
+
+.my_card_bd {
+    text-align: center;
+}
+
+.my_card_bd a{
+    display: inline-block;
+    width: 164px;
+    height: 34px;
+    background-color: #e13934;
+    border-radius: 5px;
+    border: solid 1px #e13934;
+    text-align: center;
+    line-height: 34px;
+    font-size: 15px;
+    color: #fff;
+}
+.tx_tips{
+    margin-left: 259px;
+    margin-top: 30px;
+}
+.tx_tips h5{
+    font-size: 14px;
+    color: #e13934;
+    margin-bottom: 19px;
+}
+.tx_tips p{
+    width: 607px;
+    font-size: 13px;
+    line-height: 25px;
+    color: #898989;
+}
+.my_xx{
+    font-size: 17px;
+    color: #272727;
+    padding: 34px 0 44px 40px;
+}
+#znx_tab{
+    padding: 0 40px;
+}
+/* 全选反选 */
+.checkBox,
+.checkBox1 {
+    display: inline-block;
+    padding: 9px 22px;
+    background: #e13934;
+    font-size: 14px;
+    color: #fff;
+    margin-right: 11px;
+    cursor: pointer;
+}
+.tab_lists{
+    margin-top: 36px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.tab_list_mid{
+    margin-left: 23px;
+}
+.tab_list_mid p{
+    line-height: 23px;
+}
+.tab_list_mid p:first-child{
+    font-size: 15px;
+    color: #353535;
+}
+.tab_list_mid p:last-child {
+    font-size: 13px;
+    color: #828282;
+}
+.tab_list_right a{
+    font-size: 15px;
+    line-height: 46px;
+    color: #e13934;
+    text-decoration: underline;
+}
+
+
+/* 复选框 */
+/*隐藏选项框*/
+
+.tab_list_left input[type='checkbox'] {
+    visibility: hidden;
+    cursor: pointer;
+}
+/*设置label样式*/
+.tab_list_left input[type='checkbox']+label {
+    display: inline-block;
+    vertical-align: top;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    background: url(../images/kuang.png);
+    background-size: 100% 100%;
+    transition: background 0.5s linear;
+    box-sizing: border-box;
+    -webkit-transition: background 0.3s linear;
+    -webkit-box-sizing: border-box;
+}
+/*相邻选择器来模拟选项被选择的效果*/
+.tab_list_left input[type='checkbox']:checked+label {
+    background-image: url("../images/check_16px.png");
+    background-size: 100% 100%;
+}
+
+/* 账号安全 */
+.saveWrap{
+    padding: 31px 22px 0 22px;
+}
+.saveWrap h2{
+    font-size: 18px;
+    color: #272727;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+.zc_inf{
+    width: 100%;
+    margin-bottom: 33px;
+}
+.zc_time{
+    width: 25%;
+}
+.zc_time .p1{
+    font-size: 18px;
+    color: #272727;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.zc_time .p2{
+    font-size: 14px;
+    color: #898989;
+}
+.save_jd{
+    line-height: 58px;
+}
+.saveTable{
+    width: 100%;
+    border: 1px solid #e3e3e3;
+}
+.saveTable li{
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 27px;
+    min-width: 98px;
+}
+.saveTable li:last-child{
+    border-bottom: 0;
+}
+.rzContent{
+    margin-left: 39px;
+    padding-top: 27px;
+    padding-left: 42px;
+    background: url(../images/rz.png) no-repeat left 27px;
+}
+.trueName{
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #424242;
+}
+.trueInf{
+    font-size: 15px;
+    color: #e13934;
+}
+.rz_btn{
+    padding: 35px 32px 0 0;
+}
+.rz_btn a{
+    display: inline-block;
+    width: 84px;
+    height: 34px;
+    background-color: #e13934;
+    border-radius: 5px;
+    border: solid 1px #e13934;
+    text-align: center;
+    line-height: 34px;
+    color: #fff;
+    font-size: 15px;
+}
+.yc_content{
+    margin-top: 50px;
+    text-align: center;
+    display: none;
+}
+.yc_content lable{
+    font-size: 15px;
+    color: #424242;
+}
+.yc_content input{
+    width: 260px;
+    height: 37px;
+    border: 1px solid #d5d5d5;
+    padding: 0 10px;
+    margin-left: 18px;
+}
+.underDiv{
+    margin-top: 22px;
 }
