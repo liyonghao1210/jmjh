@@ -1904,7 +1904,7 @@ ul.breadcrumb li a {
     background: #fff;
     margin-bottom: 26px;
     text-align: center;
-    padding-top: 129px;
+    padding-top: 40px;
     padding-bottom: 275px;
 }
 
@@ -3354,7 +3354,7 @@ ul.breadcrumb li a {
     width: 179px;
 }
 
-#btn_yzm {
+.btn_yzm {
     display: inline-block;
     width: 110px;
     height: 32px;
@@ -3597,11 +3597,11 @@ ul.breadcrumb li a {
 
 /* 账号安全 */
 
-.saveWrap {
+.saveWraps {
     padding: 31px 22px 0 22px;
 }
 
-.saveWrap h2 {
+.saveWraps h2 {
     font-size: 18px;
     color: #272727;
     text-align: center;
@@ -3747,4 +3747,233 @@ ul.breadcrumb li a {
     border: solid 1px #e13934;
     color: #fff;
     font-size: 15px;
+}
+
+#sz4,
+#sz6,
+#sz16 {
+    width: 136px;
+    margin-right: 10px;
+}
+
+.label_yzm {
+    margin-left: 43px;
+}
+
+.sz6 {
+    margin-left: 16px;
+}
+
+.yc_wrap {
+    width: 327px;
+    height: 126px;
+    border-radius: 8px;
+    border: solid 1px #e3e3e3;
+    margin: 0 auto;
+}
+
+.yc_wrap a {
+    display: inline-block;
+    margin-top: 19px;
+}
+
+.yc_wrap p {
+    margin-top: 16px;
+    font-size: 16px;
+    color: #e13934;
+}
+
+.save_submit .psd_submit {
+    margin-left: 74px;
+}
+
+.save_xy {
+    margin-left: 0;
+}
+
+/* 找回密码 */
+
+.zhPsdWrap {
+    width: 1200px;
+    margin: 0px auto;
+    background: #fff;
+    padding: 40px 0;
+    padding-bottom: 200px;
+}
+
+.jd_psd {
+    position: relative;
+    left: 327px;
+    width: 820px;
+}
+
+.psd_sfyz {
+    margin-right: 204px;
+}
+
+.psd_sfyz dl {
+    width: 65px;
+}
+
+.psd_sfyz dl dt {
+    width: 31px;
+    height: 31px;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 31px;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+.psd_sfyz dl .psd_red {
+    background: #e13934;
+}
+
+.psd_sfyz dl .psd_gray {
+    background: #919191;
+}
+
+.psd_sfyz dl .psd_background_gray {
+    background: url(../images/success-01.png) no-repeat center center;
+}
+.psd_sfyz dl .psd_background_red {
+    background: url(../images/success-02.png) no-repeat center center;
+}
+
+.psd_sfyz dl dd {
+    font-size: 15px;
+    color: #e13934;
+    margin-top: 21px;
+    text-align: center;
+}
+
+.psd_sfyz dl .wz_gray {
+    color: #919191;
+}
+
+.psd_gray1,
+.psd_gray2 {
+    position: absolute;
+    left: 48px;
+    top: 13px;
+    width: 238px;
+    height: 3px;
+    background-color: #919191;
+}
+.psd_redBorder{
+    background-color: #e13934;
+}
+.psd_gray2 {
+    left: 320px;
+}
+
+.psd_success_border {
+    margin-left: 3px;
+}
+
+.sf_psd_yz,
+.cz_psdWrap {
+    text-align: center;
+    margin-top: 51px;
+}
+
+.psd_tw_yzm,
+.psd_tel_yzm {
+    margin-top: 27px;
+}
+.psd_telWrap span,
+.psd_tw_yzm span,
+.psd_tel_yzm span {
+    font-size: 16px;
+    color: #3c3c3c;
+}
+
+.psd_telWrap span::before,
+.psd_tw_yzm span::before,
+.psd_tel_yzm span::before,
+.cz_new_psd span::before {
+    content: "*";
+    color: #e13934;
+}
+
+.psd_telWrap input,
+.cz_new_psd input {
+    width: 320px;
+    height: 45px;
+    border: solid 1px #dcdbdb;
+    padding: 0 10px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.psd_telWrap input:focus,
+.psd_tw_yzm input:focus,
+.psd_tel_yzm input:focus,
+.cz_new_psd input:focus {
+    border: 1px solid #e13934;
+}
+.psd_tw_yzm input{
+    width: 214px;
+    height: 45px;
+    padding: 0 10px;
+    border: solid 1px #dcdbdb;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.psd_tel_yzm input{
+    width: 233px;
+    height: 45px;
+    padding: 0 10px;
+    border: solid 1px #dcdbdb;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.psd_tw_yzm img{
+    cursor: pointer;
+}
+.psd_tel_yzm .psd_yzm_btn {
+    display: inline-block;
+    width: 95px;
+    height: 45px;
+    border: 1px solid #e13934;
+    font-size: 14px;
+    color: #e13934;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+.psd_tel_yzm .psd_yzm_btn::before{
+    content: "";
+}
+.psd_next{
+    width: 340px;
+    height: 45px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #fffefe;
+    background: #e13934;
+    margin-top: 43px;
+    margin-left: 82px;
+    border-radius: 5px;
+}
+.cz_new_psd{
+    margin-bottom: 27px;
+}
+.cz_new_bottom{
+    margin-bottom: 0;
+}
+.cz_new_psd span{
+    display: inline-block;
+    width: 78px;
+    text-align: right;
+    font-size: 16px;
+    color: #3c3c3c;
+}
+.cz_next{
+    margin-left: 90px;
+}
+.psd_success{
+    margin-bottom: 51px;
+    left: 301px;
 }

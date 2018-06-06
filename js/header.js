@@ -21,6 +21,12 @@ $(".zc-padding").click(function () {
     $(".register").show();
     showMask();
 })
+// 找回密码显示登录界面
+$(".now_login").click(function () {
+    $(".login").show();
+    showMask();
+})
+
 
 // 获取验证码
 var countdown = 60;

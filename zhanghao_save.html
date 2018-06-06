@@ -219,7 +219,7 @@
                     </div>
                     <div class="clear"></div>
                 </div>
-                <div class="saveWrap">
+                <div class="saveWraps">
                     <h2>账号安全</h2>
                     <div class=" zc_inf">
                         <div class="left zc_time">
@@ -242,7 +242,7 @@
                                     <p class="trueInf">已认证</p>
                                 </div>
                                 <div class="right rz_btn">
-                                    <a href="javascript:;">设置</a>
+                                    <a class="a_btn" href="javascript:;">设置</a>
                                 </div>
                                 <div class="clear"></div>
                             </div>
@@ -256,7 +256,7 @@
                                     <input id="sz2" type="text" value="">
                                 </div>
                                 <div class="save_submit">
-                                    <input type="submit" value="确定">
+                                    <input class="psd_submit" type="submit" value="确定">
                                 </div>
                             </div>
                         </li>
@@ -267,18 +267,22 @@
                                     <p class="trueInf">138****1234</p>
                                 </div>
                                 <div class="right rz_btn">
-                                    <a href="javascript:;">设置</a>
+                                    <a class="a_btn" href="javascript:;">设置</a>
                                 </div>
                                 <div class="clear"></div>
                             </div>
                             <div class="yc_content">
                                 <div>
-                                    <label for="sz3">真实姓名</label>
+                                    <label for="sz3">修改手机号码</label>
                                     <input id="sz3" type="text" value="">
                                 </div>
                                 <div class="underDiv">
-                                    <label for="sz4">证件号码</label>
+                                    <label for="sz4" class="label_yzm">验证码</label>
                                     <input id="sz4" type="text" value="">
+                                    <span class="yzm-time btn_yzm btnYzm2" style="height: 37px;line-height: 37px;">获取验证码</span>
+                                </div>
+                                <div class="save_submit">
+                                    <input class="psd_submit" type="submit" value="确定">
                                 </div>
                             </div>
                         </li>
@@ -289,21 +293,22 @@
                                     <p class="trueInf">123456789@qq.com</p>
                                 </div>
                                 <div class="right rz_btn">
-                                    <a href="javascript:;">设置</a>
+                                    <a class="a_btn" href="javascript:;">设置</a>
                                 </div>
                                 <div class="clear"></div>
                             </div>
                             <div class="yc_content">
                                 <div>
-                                    <label for="sz5">真实姓名</label>
+                                    <label for="sz5">邮箱地址</label>
                                     <input id="sz5" type="text" value="">
                                 </div>
                                 <div class="underDiv">
-                                    <label for="sz6">证件号码</label>
+                                    <label for="sz6" class="label_yzm sz6">验证码</label>
                                     <input id="sz6" type="text" value="">
+                                    <span class="yzm-time btn_yzm btnYzm3" style="height: 37px;line-height: 37px;">获取验证码</span>
                                 </div>
                                 <div class="save_submit">
-                                    <input type="submit" value="确定">
+                                    <input class="psd_submit" type="submit" value="确定">
                                 </div>
                             </div>
                         </li>
@@ -314,18 +319,16 @@
                                     <p class="trueInf">6288 **** **** 1234</p>
                                 </div>
                                 <div class="right rz_btn">
-                                    <a href="javascript:;">设置</a>
+                                    <a class="a_btn" href="javascript:;">设置</a>
                                 </div>
                                 <div class="clear"></div>
                             </div>
                             <div class="yc_content">
-                                <div>
-                                    <label for="sz7">真实姓名</label>
-                                    <input id="sz7" type="text" value="">
-                                </div>
-                                <div class="underDiv">
-                                    <label for="sz8">证件号码</label>
-                                    <input id="sz8" type="text" value="">
+                                <div class="yc_wrap">
+                                    <a href="###">
+                                        <img src="images/add_card.png" alt="">
+                                    </a>
+                                    <p>新增银行卡</p>
                                 </div>
                             </div>
                         </li>
@@ -336,18 +339,25 @@
                                     <p class="trueInf">已设定</p>
                                 </div>
                                 <div class="right rz_btn">
-                                    <a href="javascript:;">设置</a>
+                                    <a class="a_btn" href="javascript:;">设置</a>
                                 </div>
                                 <div class="clear"></div>
                             </div>
                             <div class="yc_content">
                                 <div>
-                                    <label for="sz9">真实姓名</label>
-                                    <input id="sz9" type="text" value="">
+                                    <label for="sz9">原登录密码</label>
+                                    <input id="sz9" type="password" value="">
                                 </div>
                                 <div class="underDiv">
-                                    <label for="sz10">证件号码</label>
-                                    <input id="sz10" type="text" value="">
+                                    <label for="sz15">新登录密码</label>
+                                    <input id="sz15" type="password" value="">
+                                </div>
+                                <div class="underDiv">
+                                    <label for="sz10">确认新密码</label>
+                                    <input id="sz10" type="password" value="">
+                                </div>
+                                <div class="save_submit">
+                                    <input class="psd_submit" type="submit" value="确定">
                                 </div>
                             </div>
                         </li>
@@ -358,18 +368,37 @@
                                     <p class="trueInf">未设定</p>
                                 </div>
                                 <div class="right rz_btn">
-                                    <a href="javascript:;">设置</a>
+                                    <a class="a_btn" href="javascript:;">设置</a>
                                 </div>
                                 <div class="clear"></div>
                             </div>
                             <div class="yc_content">
                                 <div>
-                                    <label for="sz11">真实姓名</label>
+                                    <label for="sz11">当前号码</label>
                                     <input id="sz11" type="text" value="">
                                 </div>
                                 <div class="underDiv">
-                                    <label for="sz12">证件号码</label>
-                                    <input id="sz12" type="text" value="">
+                                    <label for="sz16" class="label_yzm sz6">验证码</label>
+                                    <input id="sz16" type="text" value="">
+                                    <span class="yzm-time btn_yzm btnYzm16" style="height: 37px;line-height: 37px;">获取验证码</span>
+                                </div>
+                                <div class="underDiv">
+                                    <label for="sz12">设置密码</label>
+                                    <input id="sz12" type="password" value="">
+                                </div>
+                                <div class="underDiv">
+                                    <label for="sz17">设置密码</label>
+                                    <input id="sz17" type="password" value="">
+                                </div>
+                                <div class="underDiv">
+                                    <div class="ptxy_fxk my_card_xy save_xy">
+                                        <input type="checkbox" data-title="" class="cao-checkBox" value="">
+                                        <span>我已阅读并接受</span>
+                                        <a class="ptxy" href="#">《平台协议》</a>
+                                    </div>
+                                </div>
+                                <div class="save_submit">
+                                    <input class="psd_submit" type="submit" value="完成">
                                 </div>
                             </div>
                         </li>
@@ -380,19 +409,12 @@
                                     <p class="trueInf">未设定</p>
                                 </div>
                                 <div class="right rz_btn">
-                                    <a href="javascript:;">设置</a>
+                                    <a class="a_btn" href="javascript:;">设置</a>
                                 </div>
                                 <div class="clear"></div>
                             </div>
                             <div class="yc_content">
-                                <div>
-                                    <label for="sz13">真实姓名</label>
-                                    <input id="sz13" type="text" value="">
-                                </div>
-                                <div class="underDiv">
-                                    <label for="sz14">证件号码</label>
-                                    <input id="sz14" type="text" value="">
-                                </div>
+                                
                             </div>
                         </li>
                     </ul>
@@ -474,23 +496,15 @@
 <script type="text/javascript" src="js/form.js"></script>
 <pre class="html" name="code"></pre>
 <script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/djsTime.js"></script>
+<script type="text/javascript" src="js/save.js"></script>
 <script type="text/javascript">
-    $(".rz_btn a").click(function (event) {
-        var dd = $(this).parent().parent().next('.yc_content');
-        var display = dd.css('display');
-        if (display == 'none') {
-            $(".saveTable li .yc_content").slideUp('slow').eq($(".saveTable a").index(this)).slideDown('slow');
-            $(this).html("取消");
-        } else {
-            dd.slideUp('slow');
-            $(this).html("设置");
-        }
-    })
-    $(".save_submit input").click(function () {
-        var bb = $(".rz_btn a").parent().parent().next('.yc_content');
-        bb.slideUp('slow');
-        $(".rz_btn a").html("设置");
-    })
+    // 手机验证码
+    djsTime($(".btnYzm2"));
+    // 邮箱验证码
+    djsTime($(".btnYzm3"));
+    // 支付密码
+    djsTime($(".btnYzm16"));
 </script>
 
 </html>
